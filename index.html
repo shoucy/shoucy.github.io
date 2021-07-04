@@ -73,211 +73,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-JavaBase" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/16/JavaBase/" class="article-date">
-  <time class="dt-published" datetime="2021-06-16T13:58:00.000Z" itemprop="datePublished">2021-06-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a>►<a class="article-category-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java/">java</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/16/JavaBase/">Java基础</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="java-Yes"><a href="#java-Yes" class="headerlink" title="java? Yes!"></a>java? Yes!</h2><p>Java是JavaEE、大数据、Android开发的基础。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/16/JavaBase/" data-id="ckq10ed5z0000t4vh3s8v19as" data-title="Java基础" class="article-share-link">Compartir</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-swing" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/15/swing/" class="article-date">
-  <time class="dt-published" datetime="2021-06-15T12:26:35.000Z" itemprop="datePublished">2021-06-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/15/swing/">swing</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="Swing-Oh-shit"><a href="#Swing-Oh-shit" class="headerlink" title="Swing? Oh,shit!"></a>Swing? Oh,shit!</h3><p>Swing是一个JDK自带的GUI库，它轻量且不需要安装其它依赖。然而它也有一些问题：</p>
-<ul>
-<li>如果目标是使用Swing做出精美的页面，那么代码一定会是臃肿丑陋且庞大的。</li>
-<li>Swing早已停止更新维护，事实上也从来没有被积极的维护过。如果你在使用Swing开发时满足不了自己的需求，很难在其它渠道获得帮助。或许应该换个工具试试。</li>
-<li>它是丑陋且极难美化的。</li>
-</ul>
-<p>如果你一定要用Java开发桌面程序，且Swing无法满足你的需求，请试试javaFX技术。</p>
-<p>如果你的需求是一个轻量级的简单界面，或不幸需要使用JDK8以前的版本，那么Swing会是你的最佳选择。</p>
-<h3 id="JFrame窗口"><a href="#JFrame窗口" class="headerlink" title="JFrame窗口"></a>JFrame窗口</h3><p>来自oracle官网的”hello world”：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * HelloWorldSwing.java requires no other files.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorldSwing</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Create the GUI and show it.  For thread safety,</span></span><br><span class="line"><span class="comment">     * this method should be invoked from the</span></span><br><span class="line"><span class="comment">     * event-dispatching thread.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">createAndShowGUI</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//Create and set up the window.</span></span><br><span class="line">        JFrame frame = <span class="keyword">new</span> JFrame(<span class="string">&quot;HelloWorldSwing&quot;</span>);</span><br><span class="line">        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//Add the ubiquitous &quot;Hello World&quot; label.</span></span><br><span class="line">        JLabel label = <span class="keyword">new</span> JLabel(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">        frame.getContentPane().add(label);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//Display the window.</span></span><br><span class="line">        frame.pack();</span><br><span class="line">        frame.setVisible(<span class="keyword">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//Schedule a job for the event-dispatching thread:</span></span><br><span class="line">        <span class="comment">//creating and showing this application&#x27;s GUI.</span></span><br><span class="line">        javax.swing.SwingUtilities.invokeLater(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                createAndShowGUI();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/15/swing/" data-id="ckpy8lxs400007svhcsjp3l3b" data-title="swing" class="article-share-link">Compartir</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-APScheduler" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/09/APScheduler/" class="article-date">
-  <time class="dt-published" datetime="2021-06-09T13:55:41.000Z" itemprop="datePublished">2021-06-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/09/APScheduler/">APScheduler——Python定时任务</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="APScheduler-Yes"><a href="#APScheduler-Yes" class="headerlink" title="APScheduler? Yes!"></a>APScheduler? Yes!</h3><p>Advanced Python Scheduler (APScheduler) 是一个 Python 库，可让您可以安排您的Python代码稍后执行，只执行一次，或者定期执行。</p>
-<p>让我们一起：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install apscheduler</span><br></pre></td></tr></table></figure>
-
-<h3 id="APScheduler的四大组件"><a href="#APScheduler的四大组件" class="headerlink" title="APScheduler的四大组件"></a>APScheduler的四大组件</h3><ul>
-<li>triggers 触发器 可以按照日期、时间间隔或者contab表达式三种方式触发</li>
-<li>job stores 作业存储器 指定作业存放的位置，默认保存在内存，也可以保存在各种数据库中</li>
-<li>executors 执行器 将指定的作业提交到线程池或者进程池中运行</li>
-<li>schedulers 作业调度器 常用的有BackgroundScheduler（后台运行）和BlockingScheduler(阻塞式)</li>
-</ul>
-<h3 id="demo-测试BlockingScheduler与BackgroundScheduler"><a href="#demo-测试BlockingScheduler与BackgroundScheduler" class="headerlink" title="demo:测试BlockingScheduler与BackgroundScheduler"></a>demo:测试BlockingScheduler与BackgroundScheduler</h3><p>我们先来测试BlockingScheduler：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> apscheduler.schedulers.background <span class="keyword">import</span> BlockingScheduler</span><br><span class="line"><span class="keyword">from</span> apscheduler.triggers.interval <span class="keyword">import</span> IntervalTrigger</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_job</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;my_job, &#123;&#125;&#x27;</span>.<span class="built_in">format</span>(time.ctime()))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment"># 当调度程序是您的进程中唯一运行的东西时,使用BlockingScheduler</span></span><br><span class="line">    scheduler = BlockingScheduler()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 间隔设置为1秒，还可以使用minutes、hours、days、weeks等</span></span><br><span class="line">    intervalTrigger = IntervalTrigger(seconds=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 给作业设个id，方便作业的后续操作，暂停、取消等</span></span><br><span class="line">    scheduler.add_job(my_job, intervalTrigger, <span class="built_in">id</span>=<span class="string">&#x27;my_job_id&#x27;</span>)</span><br><span class="line">    scheduler.start()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;=== end. ===&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>运行结果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">my_job, Wed Jun  9 22:33:39 2021</span><br><span class="line">my_job, Wed Jun  9 22:33:40 2021</span><br><span class="line">my_job, Wed Jun  9 22:33:41 2021</span><br><span class="line">my_job, Wed Jun  9 22:33:42 2021</span><br><span class="line">my_job, Wed Jun  9 22:33:43 2021</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
-<p>当我们结束程序时：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">......</span><br><span class="line">my_job, Wed Jun  9 22:33:46 2021</span><br><span class="line">my_job, Wed Jun  9 22:33:47 2021</span><br><span class="line"></span><br><span class="line">Process finished with exit code -1</span><br></pre></td></tr></table></figure>
-
-<p>我们可以发现，代码<code>print(&#39;=== end. ===&#39;)</code>直至最终也没有执行。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/09/APScheduler/" data-id="ckppkstcw0000c8vh6b2a81os" data-title="APScheduler——Python定时任务" class="article-share-link">Compartir</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Tkinter" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/08/Tkinter/" class="article-date">
-  <time class="dt-published" datetime="2021-06-08T12:14:47.000Z" itemprop="datePublished">2021-06-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/08/Tkinter/">Tkinter--简单的Python GUI</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="Tkinter？Yes"><a href="#Tkinter？Yes" class="headerlink" title="Tkinter？Yes!"></a>Tkinter？Yes!</h3><p>Tkinter是一个Python标准库中的GUI库。它有好多优点：</p>
-<ol>
-<li>不需要额外安装。</li>
-<li>快！！！</li>
-<li>颜值过的去。它会调用系统组件，所以可以自然融入所运行的操作系统中。当然，也就是说windows和macOS环境下，相貌是不同的。</li>
-</ol>
-<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><h4 id="demo1-you-hit-me"><a href="#demo1-you-hit-me" class="headerlink" title="demo1:you hit me"></a>demo1:you hit me</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个窗口</span></span><br><span class="line">window = tk.Tk()</span><br><span class="line"><span class="comment"># 可以设定窗口标题，macOS环境下比较好看：window.title(&#x27;my window&#x27;)</span></span><br><span class="line">window.geometry(<span class="string">&#x27;200x100&#x27;</span>)</span><br><span class="line"></span><br><span class="line">var = tk.StringVar()</span><br><span class="line"><span class="comment"># 创建一个label组件</span></span><br><span class="line"><span class="comment"># ps:宽高是以字符为单位的</span></span><br><span class="line">label = tk.Label(window, textvariable=var, bg=<span class="string">&#x27;green&#x27;</span>, font=(<span class="string">&#x27;Arin&#x27;</span>, <span class="number">12</span>), width=<span class="number">15</span>, height=<span class="number">2</span>)</span><br><span class="line">label.pack()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 一个button点击状态flag</span></span><br><span class="line">on_hit = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hit_me</span>():</span></span><br><span class="line">    <span class="keyword">global</span> on_hit</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> on_hit:</span><br><span class="line">        var.<span class="built_in">set</span>(<span class="string">&#x27;you hit me&#x27;</span>)</span><br><span class="line">        on_hit = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        var.<span class="built_in">set</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        on_hit = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个Button</span></span><br><span class="line">button = tk.Button(window, text=<span class="string">&#x27;hit me&#x27;</span>, width=<span class="number">15</span>, height=<span class="number">2</span>, command=hit_me)</span><br><span class="line">button.pack()</span><br><span class="line"><span class="comment"># 让window不断循环</span></span><br><span class="line">window.mainloop()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>通过点击“hit me”按钮，绿色lable显示或取消显示“you hit me”。</p>
-<p><img src="/2021/06/08/Tkinter/image-20210608210733004.png" alt="未点击"></p>
-<p><img src="/2021/06/08/Tkinter/image-20210608210854656.png" alt="点击后"></p>
-<p>有没有发现lable和button的“width”属性都是15，然而长度却不同。因为“width”的单位是字符，它们的字体大小不一样，同样“width”所表示的宽度也不同。</p>
-<h4 id="demo2-insert-to-“text”"><a href="#demo2-insert-to-“text”" class="headerlink" title="demo2:insert to “text”"></a>demo2:insert to “text”</h4><p>这个demo中我们在entry组件中输入内容，并以”insert“、”end“两种方式插入到text组件中显示。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个窗口</span></span><br><span class="line">window = tk.Tk()</span><br><span class="line">window.geometry(<span class="string">&#x27;200x200&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个entry，输入内容时显示为“*”</span></span><br><span class="line">entry = tk.Entry(window, show=<span class="string">&#x27;*&#x27;</span>)</span><br><span class="line">entry.pack()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insert_point</span>():</span></span><br><span class="line">    var = entry.get()</span><br><span class="line">    <span class="comment"># 在指针所在处插入</span></span><br><span class="line">    text.insert(<span class="string">&#x27;insert&#x27;</span>, var)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insert_end</span>():</span></span><br><span class="line">    var = entry.get()</span><br><span class="line">    <span class="comment"># 在末尾处插入</span></span><br><span class="line">    text.insert(<span class="string">&#x27;end&#x27;</span>, var)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个Button</span></span><br><span class="line">button1 = tk.Button(window, text=<span class="string">&#x27;insert point&#x27;</span>, width=<span class="number">15</span>, height=<span class="number">2</span>, command=insert_point)</span><br><span class="line">button1.pack()</span><br><span class="line"></span><br><span class="line">button2 = tk.Button(window, text=<span class="string">&#x27;insert end&#x27;</span>, width=<span class="number">15</span>, height=<span class="number">2</span>, command=insert_end)</span><br><span class="line">button2.pack()</span><br><span class="line"></span><br><span class="line">text = tk.Text(window, height=<span class="number">2</span>)</span><br><span class="line">text.pack()</span><br><span class="line"><span class="comment"># 让window不断循环</span></span><br><span class="line">window.mainloop()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<p><img src="/2021/06/08/Tkinter/image-20210608214100009.png" alt="效果图"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/08/Tkinter/" data-id="ckpo3hptw00008wvh3sju28xx" data-title="Tkinter--简单的Python GUI" class="article-share-link">Compartir</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-计算机基本概念" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="article-date">
@@ -389,6 +184,27 @@
 <h4 id="人机交互方式"><a href="#人机交互方式" class="headerlink" title="人机交互方式"></a>人机交互方式</h4><p>图形化界面（Graphical User Interface，GUI），这种方式简单直观，使用者易于接受，容易上手操作。</p>
 <p>命令行方式（Command Line Interface，CLI），需要有一个控制台，输入特定的指令，让计算机完成一些操作。较为麻烦，需要记住指令。</p>
 <p>最早的图形化界面是由施乐公司研发的，苹果抄袭（借鉴）了施乐，微软又抄袭（借鉴）了苹果。</p>
+<h4 id="常用DOS命令"><a href="#常用DOS命令" class="headerlink" title="常用DOS命令"></a>常用DOS命令</h4><ul>
+<li>dir：列出当前目录下的文件或文件夹</li>
+<li>md：创建目录</li>
+<li>rd：删除目录</li>
+<li>cd：进入指定目录</li>
+<li>cd..：退回到上一级目录</li>
+<li>del：删除文件</li>
+<li>exit：退出dos命令行</li>
+</ul>
+<h4 id="编程语言介绍"><a href="#编程语言介绍" class="headerlink" title="编程语言介绍"></a>编程语言介绍</h4><p>第一代语言：机器语言，以二进制形式存在</p>
+<p>第二代语言：汇编语言，使用助记符表示一条机器指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">a(汇编语言) --&gt;  b[汇编器]--&gt;c(机器代码文件)</span><br></pre></td></tr></table></figure>
+
+<p>第三代语言：高级语言</p>
+<ol>
+<li>C、Pascal、Fortran等面向过程编程语言</li>
+<li>C++兼具面向过程与面向对象</li>
+<li>JAVA面向对象</li>
+<li>.NET跨平台语言</li>
+<li>Python、Scala…</li>
+</ol>
 <h4 id="软件的应用场景"><a href="#软件的应用场景" class="headerlink" title="软件的应用场景"></a>软件的应用场景</h4><p>除了个人计算机，飞机、汽车、手机、甚至烤面包机中都在运行着程序。</p>
 <h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>操作（Operating System）系统是运行在计算机上的最重要的程序，它可以管理和操作计算机的活动。</p>
 <p>它可以：</p>
@@ -402,7 +218,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" data-id="ckpl66vni00007kvha0pnah7f" data-title="计算机基本概念" class="article-share-link">Compartir</a>
+      <a data-url="https://shoucy.github.io/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" data-id="ckqp83wse000d6cvh06uq5n13" data-title="计算机基本概念" class="article-share-link">Compartir</a>
       
       
       
@@ -424,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categorías</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java/">java</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a></li></ul>
     </div>
   </div>
 
@@ -450,22 +266,6 @@
     <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2021/06/16/JavaBase/">Java基础</a>
-          </li>
-        
-          <li>
-            <a href="/2021/06/15/swing/">swing</a>
-          </li>
-        
-          <li>
-            <a href="/2021/06/09/APScheduler/">APScheduler——Python定时任务</a>
-          </li>
-        
-          <li>
-            <a href="/2021/06/08/Tkinter/">Tkinter--简单的Python GUI</a>
-          </li>
         
           <li>
             <a href="/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">计算机基本概念</a>
