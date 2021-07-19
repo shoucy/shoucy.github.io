@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Docker | 去海边的路上</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Docker? Yes!你是不是有以下苦恼？  一款产品，开发与上线搭建两套环境。好麻烦！ 部署集群，每台机器都要部署环境（Redis，ES，Hadoop…），各种来回修改修改配置，好麻烦！ 开发明明在电脑上可以运行，运维部署上后运行不了，因为版本差异导致服务不能用。运维口吐芬芳！ windows开发一时爽，部署linux火葬场。 开发看运维不爽，想干掉运维，却又不知如何下手。  这些问题拥有共同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="https://shoucy.github.io/2021/07/19/Docker/index.html">
+<meta property="og:site_name" content="去海边的路上">
+<meta property="og:description" content="Docker? Yes!你是不是有以下苦恼？  一款产品，开发与上线搭建两套环境。好麻烦！ 部署集群，每台机器都要部署环境（Redis，ES，Hadoop…），各种来回修改修改配置，好麻烦！ 开发明明在电脑上可以运行，运维部署上后运行不了，因为版本差异导致服务不能用。运维口吐芬芳！ windows开发一时爽，部署linux火葬场。 开发看运维不爽，想干掉运维，却又不知如何下手。  这些问题拥有共同">
+<meta property="og:locale">
+<meta property="og:image" content="https://shoucy.github.io/2021/07/19/Docker/docker-logo.png">
+<meta property="og:image" content="https://shoucy.github.io/2021/07/19/Docker/command-line.jpg">
+<meta property="article:published_time" content="2021-07-19T14:48:38.000Z">
+<meta property="article:modified_time" content="2021-07-19T14:50:44.670Z">
+<meta property="article:author" content="Shou Chengyu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shoucy.github.io/2021/07/19/Docker/docker-logo.png">
+  
+    <link rel="alternate" href="/atom.xml" title="去海边的路上" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">去海边的路上</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://shoucy.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Docker" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/19/Docker/" class="article-date">
+  <time class="dt-published" datetime="2021-07-19T14:48:38.000Z" itemprop="datePublished">2021-07-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Docker
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Docker-Yes"><a href="#Docker-Yes" class="headerlink" title="Docker? Yes!"></a>Docker? Yes!</h2><p>你是不是有以下苦恼？</p>
+<ul>
+<li>一款产品，开发与上线搭建两套环境。好麻烦！</li>
+<li>部署集群，每台机器都要部署环境（Redis，ES，Hadoop…），各种来回修改修改配置，好麻烦！</li>
+<li>开发明明在电脑上可以运行，运维部署上后运行不了，因为版本差异导致服务不能用。运维口吐芬芳！</li>
+<li>windows开发一时爽，部署linux火葬场。</li>
+<li>开发看运维不爽，想干掉运维，却又不知如何下手。</li>
+</ul>
+<p>这些问题拥有共同的答案：Docker！</p>
+<p><img src="/2021/07/19/Docker/docker-logo.png" alt="docker的logo"></p>
+<p>Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。</p>
+<p>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
+<p>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.docker.com/">https://www.docker.com/</a></p>
+<h2 id="Docker的历史"><a href="#Docker的历史" class="headerlink" title="Docker的历史"></a>Docker的历史</h2><p>2010年搞IT的几个年轻人，在美国成立了一家公司——<strong>DotCloud</strong>。通过paas的云计算服务。他们将自己的容器化技术，命名为Docker。</p>
+<p>Docker起步阶段，没有引起行业的注意，DotCloud眼看凉凉。2013年为了将技术延续下去，决定将Docker开源，一开惊人，越来越多人发现了Docker的优点！</p>
+<p>2014年4月9日，Docker1.0发布！</p>
+<h2 id="Docker与虚拟机的对比"><a href="#Docker与虚拟机的对比" class="headerlink" title="Docker与虚拟机的对比"></a>Docker与虚拟机的对比</h2><p>虚拟机：</p>
+<ul>
+<li>虚拟机是一种虚拟技术，完成的虚拟一台完整的操作系统，然后在这套虚拟系统安装和运行软件。</li>
+<li>使用虚拟机占用资源十分多，冗余步骤多，启动很慢。</li>
+</ul>
+<p>Docker：</p>
+<ul>
+<li>容器化技术并不是模拟一个完整的操作系统，它没有自己的内核，也不虚拟硬件。容器内的应用直接运行在宿主机。</li>
+<li>每个容器内都有属于自己的文件系统，互不影响。</li>
+<li>一台物理机可以运行多个Docker实例。</li>
+<li>Docker容器技术，也是一种虚拟技术。Docker容器只虚拟最核心的环境，只有4兆，十分轻巧，秒级启动。</li>
+</ul>
+<h2 id="DevOps"><a href="#DevOps" class="headerlink" title="DevOps"></a>DevOps</h2><p>既是开发人员，又是运维人员。DevOps可以更快的交付和部署。</p>
+<p>Docker让你一键运行打包镜像，发布测试。</p>
+<p>Docker让你的开发、测试、生产高度一致。让你开发测试部署一条龙给客户提供服务。</p>
+<h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h2><h3 id="卸载旧的Docker"><a href="#卸载旧的Docker" class="headerlink" title="卸载旧的Docker"></a>卸载旧的Docker</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum remove docker \</span></span><br><span class="line"><span class="bash">             docker-client \</span></span><br><span class="line"><span class="bash">             docker-client-latest \</span></span><br><span class="line"><span class="bash">             docker-common \</span></span><br><span class="line"><span class="bash">             docker-latest \</span></span><br><span class="line"><span class="bash">             docker-latest-logrotate \</span></span><br><span class="line"><span class="bash">             docker-logrotate \</span></span><br><span class="line"><span class="bash">             docker-engine</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install -y yum-utils</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="设置镜像的仓库"><a href="#设置镜像的仓库" class="headerlink" title="设置镜像的仓库"></a>设置镜像的仓库</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum-config-manager \</span></span><br><span class="line"><span class="bash">    --add-repo \</span></span><br><span class="line"><span class="bash">    https://download.docker.com/linux/centos/docker-ce.repo</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install docker-ce docker-ce-cli containerd.io</span></span><br></pre></td></tr></table></figure>
+
+<p>ps: docker-ce是社区版，ee是企业版。</p>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> systemctl start docker</span></span><br></pre></td></tr></table></figure>
+
+<p>跑个helloword：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run hello-world</span></span><br><span class="line"></span><br><span class="line">Hello from Docker!</span><br><span class="line">This message shows that your installation appears to be working correctly.</span><br><span class="line"></span><br><span class="line">To generate this message, Docker took the following steps:</span><br><span class="line"> 1. The Docker client contacted the Docker daemon.</span><br><span class="line"> 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.</span><br><span class="line">    (amd64)</span><br><span class="line"> 3. The Docker daemon created a new container from that image which runs the</span><br><span class="line">    executable that produces the output you are currently reading.</span><br><span class="line"> 4. The Docker daemon streamed that output to the Docker client, which sent it</span><br><span class="line">    to your terminal.</span><br><span class="line"></span><br><span class="line">To try something more ambitious, you can run an Ubuntu container with:</span><br><span class="line"><span class="meta"> $</span><span class="bash"> docker run -it ubuntu bash</span></span><br><span class="line"></span><br><span class="line">Share images, automate workflows, and more with a free Docker ID:</span><br><span class="line"> https://hub.docker.com/</span><br><span class="line"></span><br><span class="line">For more examples and ideas, visit:</span><br><span class="line"> https://docs.docker.com/get-started/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 卸载软件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> yum remove docker-ce docker-ce-cli containerd.io</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载后删除目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rm -rf /var/lib/docker</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> rm -rf /var/lib/containerd</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="底层原理"><a href="#底层原理" class="headerlink" title="底层原理"></a>底层原理</h2><h3 id="Docker是如何工作的？"><a href="#Docker是如何工作的？" class="headerlink" title="Docker是如何工作的？"></a>Docker是如何工作的？</h3><p>Docker是一个Client-Server结构的系统，Docker的守护进程运行在主机上。通过Socket从客户端访问！</p>
+<p>DockerServer接收到Docker-Client的指令，就会执行这个命令。</p>
+<h2 id="Docker命令"><a href="#Docker命令" class="headerlink" title="Docker命令"></a>Docker命令</h2><p>最常用的一些命令：</p>
+<p><img src="/2021/07/19/Docker/command-line.jpg" alt="docker常用命令"></p>
+<p>详情见文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/run/">https://docs.docker.com/engine/reference/run/</a></p>
+<p>查阅docker信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 版本</span></span><br><span class="line">docker version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 镜像和容器的信息</span></span><br><span class="line">docker info</span><br><span class="line"><span class="meta">#</span><span class="bash"> 帮助文档</span></span><br><span class="line">dicker 命令 --help</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="镜像命令"><a href="#镜像命令" class="headerlink" title="镜像命令"></a>镜像命令</h3><p>文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/reference/">https://docs.docker.com/reference/</a></p>
+<h4 id="docker-images"><a href="#docker-images" class="headerlink" title="docker images"></a>docker images</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker images</span></span><br><span class="line">REPOSITORY    TAG       IMAGE ID       CREATED         SIZE</span><br><span class="line">mysql         latest    c8562eaf9d81   6 months ago    546MB</span><br><span class="line">centos        latest    300e315adb2f   7 months ago    209MB</span><br><span class="line">hello-world   latest    bf756fb1ae65   18 months ago   13.3kB		</span><br></pre></td></tr></table></figure>
+
+<p>具体解释如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RESPOSITORY</td>
+<td>镜像的仓库源</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>镜像的标签(版本)</td>
+</tr>
+<tr>
+<td>IMAGE ID</td>
+<td>镜像的ID</td>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>镜像创建时间</td>
+</tr>
+<tr>
+<td>SIZE</td>
+<td>镜像大小</td>
+</tr>
+</tbody></table>
+<p>常用可选项：</p>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>完整</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>–all</td>
+<td>列出所有镜像</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>–queit</td>
+<td>只显示镜像的id</td>
+</tr>
+</tbody></table>
+<h4 id="docker-search"><a href="#docker-search" class="headerlink" title="docker search"></a>docker search</h4><p>搜索镜像的命令。</p>
+<p>但还是建议去官方的Docker Hub搜索，信息更全。</p>
+<p>Docker Hub：<a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker search mysql</span></span><br><span class="line">NAME                       DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED</span><br><span class="line">mysql                      MySQL is a widely used, open-source relation…   11138     [OK]       </span><br><span class="line">mariadb                    MariaDB Server is a high performing open sou…   4221      [OK]       </span><br><span class="line">mysql/mysql-server         Optimized MySQL Server Docker images. Create…   829                  [OK]</span><br><span class="line">centos/mysql-57-centos7    MySQL 5.7 SQL database server                   89                   </span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-pull"><a href="#docker-pull" class="headerlink" title="docker pull"></a>docker pull</h4><p>拉取镜像</p>
+<p>以下载mysql为例：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull mysql <span class="comment"># 如果要指定版本，就docker pull mysql[:tag]</span></span></span><br><span class="line">Using default tag: latest # 默认latest</span><br><span class="line">latest: Pulling from library/mysql</span><br><span class="line">b4d181a07f80: Pull complete # 分层下载，联合文件系统，docker image的核心。</span><br><span class="line">a462b60610f5: Pull complete </span><br><span class="line">578fafb77ab8: Pull complete </span><br><span class="line">524046006037: Pull complete </span><br><span class="line">d0cbe54c8855: Pull complete </span><br><span class="line">aa18e05cc46d: Pull complete </span><br><span class="line">32ca814c833f: Pull complete </span><br><span class="line">9ecc8abdb7f5: Pull complete </span><br><span class="line">ad042b682e0f: Pull complete </span><br><span class="line">71d327c6bb78: Pull complete </span><br><span class="line">165d1d10a3fa: Pull complete </span><br><span class="line">2f40c47d0626: Pull complete </span><br><span class="line">Digest: sha256:52b8406e4c32b8cf0557f1b74517e14c5393aff5cf0384eff62d9e81f4985d4b # 签名</span><br><span class="line">Status: Downloaded newer image for mysql:latest # 真实地址</span><br><span class="line">docker.io/library/mysql:latest</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-rmi"><a href="#docker-rmi" class="headerlink" title="docker rmi"></a>docker rmi</h4><p>删除镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ docker rmi c8562eaf9d81</span><br><span class="line">Untagged: mysql@sha256:feada149cb8ff54eade1336da7c1d080c4a1c7ed82b5e320efb5beebed85ae8c</span><br><span class="line">Deleted: sha256:c8562eaf9d81c779cbfc318d6e01b8e6f86907f1d41233268a2ed83b2f34e748</span><br><span class="line">Deleted: sha256:1b649b85960473808c6b812fc30c3f6a3ff1c0ffdcba5c9435daf01cf7d5373a</span><br><span class="line">Deleted: sha256:19cc889447050c16c797fd209fa114ee219de23facb37c00d4137a4ed4aad922</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<h3 id="容器命令"><a href="#容器命令" class="headerlink" title="容器命令"></a>容器命令</h3><h4 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h4><p>创建容器并启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [可选参数] image</span><br></pre></td></tr></table></figure>
+
+<p>常用可选参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>–name=”foo”</td>
+<td>指定容器名称</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>后台运行</td>
+</tr>
+<tr>
+<td>-it</td>
+<td>交互式运行，进入容器查看内容</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>指定容器端口</td>
+</tr>
+</tbody></table>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 进入容器</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run -it centos /bin/bash</span></span><br><span class="line">[root@c663294f668f /]# ls</span><br><span class="line">bin  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var</span><br><span class="line"><span class="meta">#</span><span class="bash"> 退出</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">exit</span></span>    </span><br><span class="line">exit</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看正在运行的容器</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker ps</span></span><br><span class="line">CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span><br><span class="line"><span class="meta">#</span><span class="bash"> 现在与历史运行过的容器</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker ps -a</span></span><br><span class="line">CONTAINER ID   IMAGE         COMMAND       CREATED          STATUS                       PORTS     NAMES</span><br><span class="line">c663294f668f   centos        &quot;/bin/bash&quot;   11 minutes ago   Exited (127) 6 minutes ago             recursing_gould</span><br><span class="line">9d91f4a82687   hello-world   &quot;/hello&quot;      8 hours ago      Exited (0) 8 hours ago                 frosty_snyder</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>关于退出容器</p>
+<ul>
+<li>exit：直接结束容器运行</li>
+<li>ctrl + p + q：容器在不停止的情况退出命令行</li>
+</ul>
+<h4 id="docker-rm"><a href="#docker-rm" class="headerlink" title="docker rm"></a>docker rm</h4><p>删除指定容器</p>
+<p>全部删除：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@bibiboy ~]# docker rm -f $(docker ps -aq)</span><br><span class="line">c663294f668f</span><br><span class="line">9d91f4a82687</span><br><span class="line">7e4410476a9d</span><br><span class="line">c55bb8d50716</span><br><span class="line">1693844328e6</span><br><span class="line">035a227f634a</span><br><span class="line">000b68316321</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-start-restart-stop-kill"><a href="#docker-start-restart-stop-kill" class="headerlink" title="docker start/restart/stop/kill"></a>docker start/restart/stop/kill</h4><ul>
+<li>docker start：启动</li>
+<li>docker restart：重启</li>
+<li>docker stop：停止</li>
+<li>docker kill：强制关闭</li>
+</ul>
+<h4 id="docker-logs"><a href="#docker-logs" class="headerlink" title="docker logs"></a>docker logs</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看日志，需要提供容器id,本示例所使用的CONTAINER ID为1c21173fb470</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker logs 1c21173fb470</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 带时间戳的日志</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker logs -tf 1c21173fb470</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 控制显示条数</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker logs --tail 10 1c21173fb470</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-top"><a href="#docker-top" class="headerlink" title="docker top"></a>docker top</h4><p>查看容器内的进程信息，需要提供容器id</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker top 1c21173fb470</span></span><br><span class="line">UID      PID      PPID      C      STIME      TTY       TIME      CMD</span><br><span class="line">root     30254    30234     4      21:03      pts/0     00:00:00  /bin/bas</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-inspect"><a href="#docker-inspect" class="headerlink" title="docker inspect"></a>docker inspect</h4><p>显示指定容器的详细信息，需提供容器id</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect 1c21173fb470</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-exec"><a href="#docker-exec" class="headerlink" title="docker exec"></a>docker exec</h4><p>进入一个容器，并打开一个命令行工具。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 1c21173fb470 /bin/bash</span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-attach"><a href="#docker-attach" class="headerlink" title="docker attach"></a>docker attach</h4><p>进入容器，并使用容器正在运行的命令行。</p>
+<p>这在个人使用时很方便，但在多人使用时会出现共用控制台的情形。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker attach 1c21173fb470</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="docker-cp"><a href="#docker-cp" class="headerlink" title="docker cp"></a>docker cp</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> docker cp 容器id:容器内路径 目的地主机路径</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker cp 1c21173fb470:/root/dove.txt ./</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://shoucy.github.io/2021/07/19/Docker/" data-id="ckraquh190008wovh0irmazzp" data-title="Docker" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/11/logging/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">logging——python日志模块</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/">python</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/19/Docker/">Docker</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/11/logging/">logging——python日志模块</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">计算机基本概念</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Shou Chengyu<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
