@@ -14,9 +14,10 @@
 <meta property="og:description" content="Docker? Yes!你是不是有以下苦恼？  一款产品，开发与上线搭建两套环境。好麻烦！ 部署集群，每台机器都要部署环境（Redis，ES，Hadoop…），各种来回修改修改配置，好麻烦！ 开发明明在电脑上可以运行，运维部署上后运行不了，因为版本差异导致服务不能用。运维口吐芬芳！ windows开发一时爽，部署linux火葬场。 开发看运维不爽，想干掉运维，却又不知如何下手。  这些问题拥有共同">
 <meta property="og:locale">
 <meta property="og:image" content="https://shoucy.github.io/2021/07/19/Docker/docker-logo.png">
+<meta property="og:image" content="https://shoucy.github.io/2021/07/19/Docker/architecture.svg">
 <meta property="og:image" content="https://shoucy.github.io/2021/07/19/Docker/command-line.jpg">
 <meta property="article:published_time" content="2021-07-19T14:48:38.000Z">
-<meta property="article:modified_time" content="2021-07-19T14:50:44.670Z">
+<meta property="article:modified_time" content="2021-07-23T13:58:28.378Z">
 <meta property="article:author" content="Shou Chengyu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://shoucy.github.io/2021/07/19/Docker/docker-logo.png">
@@ -66,10 +67,10 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://shoucy.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://shoucy.github.io"></form>
       </div>
     </div>
   </div>
@@ -148,8 +149,19 @@
 
 
 
-<h2 id="底层原理"><a href="#底层原理" class="headerlink" title="底层原理"></a>底层原理</h2><h3 id="Docker是如何工作的？"><a href="#Docker是如何工作的？" class="headerlink" title="Docker是如何工作的？"></a>Docker是如何工作的？</h3><p>Docker是一个Client-Server结构的系统，Docker的守护进程运行在主机上。通过Socket从客户端访问！</p>
+<h2 id="底层原理"><a href="#底层原理" class="headerlink" title="底层原理"></a>底层原理</h2><h3 id="Docker是如何工作的？"><a href="#Docker是如何工作的？" class="headerlink" title="Docker是如何工作的？"></a>Docker是如何工作的？</h3><p>一图胜千言：</p>
+<p><img src="/2021/07/19/Docker/architecture.svg" alt="Docker Architecture Diagram"></p>
+<p>Docker是一个Client-Server结构的系统，Docker的守护进程运行在主机上。通过Socket从客户端访问！</p>
 <p>DockerServer接收到Docker-Client的指令，就会执行这个命令。</p>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>镜像是一种轻量级、可执行的独立软件包，用来打包运行环境和基于此环境开发的软件，它包含某个软件需要的所有内容，包括代码、运行时、库、环境变量和配置文件。</p>
+<p>所有的应用，直接打包docker镜像，就可以直接跑起来。</p>
+<p>如何得到镜像呢？</p>
+<ol>
+<li>从远程仓库下载</li>
+<li>拷贝</li>
+<li><strong>制作一个镜像DockerFile</strong></li>
+</ol>
+<h3 id="联合文件系统"><a href="#联合文件系统" class="headerlink" title="联合文件系统"></a>联合文件系统</h3><p>联合文件系统（UnionFS）是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下。<br>联合文件系统是 Docker 镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
 <h2 id="Docker命令"><a href="#Docker命令" class="headerlink" title="Docker命令"></a>Docker命令</h2><p>最常用的一些命令：</p>
 <p><img src="/2021/07/19/Docker/command-line.jpg" alt="docker常用命令"></p>
 <p>详情见文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/run/">https://docs.docker.com/engine/reference/run/</a></p>
@@ -284,25 +296,35 @@
 
 <h4 id="docker-cp"><a href="#docker-cp" class="headerlink" title="docker cp"></a>docker cp</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> docker cp 容器id:容器内路径 目的地主机路径</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker cp 1c21173fb470:/root/dove.txt ./</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="docker-states"><a href="#docker-states" class="headerlink" title="docker states"></a>docker states</h4><p>检查各容器状态，主要用来查看cpu和内存的占用情况。</p>
+<h3 id="容器与镜像之间"><a href="#容器与镜像之间" class="headerlink" title="容器与镜像之间"></a>容器与镜像之间</h3><h4 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h4><p>提交容器成为一个新的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker commit -m=<span class="string">&quot;提交的描述信息&quot;</span> -a=<span class="string">&quot;作者&quot;</span> 容器id 目标镜像名[:tag]</span></span><br></pre></td></tr></table></figure>
 
 
 
+<h2 id="容器数据卷"><a href="#容器数据卷" class="headerlink" title="容器数据卷"></a>容器数据卷</h2><p>docker的作用就是将环境与应用打包成镜像。但是数据怎么办呢？容器一删，数据就无了。</p>
+<p>删库跑路so easy~</p>
+<p>数据库产生的数据肯定是不能在容器中的！</p>
+<p>Docker容器之间有种数据共享技术——数据卷！数据卷可以将Docker容器中产生的数据，同步到本地，也就是将容器内的目录挂载在Linux上。甚至可以做到容器间的数据共享。</p>
+<h3 id="方式一：使用命令-v挂载"><a href="#方式一：使用命令-v挂载" class="headerlink" title="方式一：使用命令-v挂载"></a>方式一：使用命令<code>-v</code>挂载</h3><p>在使用 <code>run</code> 时追加 <code>-v 宿主机目录:容器目录</code> 的形式在实现挂载。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run -it -v /home/<span class="built_in">test</span>:/home centos /bin/bash</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> home/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> touch test.test</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Ctrl + P + Q 退出容器</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /home/<span class="built_in">test</span>/ <span class="comment"># docker自动创建了这个文件夹</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ls</span></span><br><span class="line">test.test</span><br><span class="line"><span class="meta">$</span><span class="bash"> docker inspect c43d7f988b94 <span class="comment"># 查寻容器信息，可以找到挂载信息</span></span></span><br><span class="line">...</span><br><span class="line">&quot;Mounts&quot;: [</span><br><span class="line">            &#123;</span><br><span class="line">                &quot;Type&quot;: &quot;bind&quot;,</span><br><span class="line">                &quot;Source&quot;: &quot;/home/test&quot;,</span><br><span class="line">                &quot;Destination&quot;: &quot;/home&quot;,</span><br><span class="line">                &quot;Mode&quot;: &quot;&quot;,</span><br><span class="line">                &quot;RW&quot;: true,</span><br><span class="line">                &quot;Propagation&quot;: &quot;rprivate&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        ],</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 
+<p>mysql挂载：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull mysql5.7</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run -d -p 3310:3306 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 --name mysql01 mysql:5.7</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="具名与匿名挂载"><a href="#具名与匿名挂载" class="headerlink" title="具名与匿名挂载"></a>具名与匿名挂载</h4><p>具名挂载：指定宿主机的挂载路径以及容器的挂载路径。</p>
+<p>匿名挂载：只写容器内的路径，不写容器外的。会默认映射到docker容器的工作路径（<code>/var/lib/docker/volumes/xxx/_data</code>）。</p>
+<h3 id="方式二：使用DockerFile"><a href="#方式二：使用DockerFile" class="headerlink" title="方式二：使用DockerFile"></a>方式二：使用DockerFile</h3><p>docker file就是用来构建docker镜像的构建文件。</p>
+<p>举个栗子：</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> centos</span><br><span class="line"></span><br><span class="line"><span class="keyword">VOLUME</span><span class="bash"> [<span class="string">&quot;volume01&quot;</span>,<span class="string">&quot;volume02&quot;</span>] <span class="comment"># 挂载了两个目录，还是匿名的</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&quot;------end------&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/bash</span></span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
+<p>如果没有在构建时指明挂载，那就只能在创建容器时手动 <code>-v</code> 了。</p>
+<p><code>--volumes-from</code> 可以实现容器间的数据共享。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/07/19/Docker/" data-id="ckraquh190008wovh0irmazzp" data-title="Docker" class="article-share-link">Share</a>
+      <a data-url="https://shoucy.github.io/2021/07/19/Docker/" data-id="ckrgf8jil000a1svh39tif63a" data-title="Docker" class="article-share-link">Teilen</a>
       
       
       
@@ -314,7 +336,7 @@
   
   
     <a href="/2021/07/11/logging/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">logging——python日志模块</div>
     </a>
   
@@ -330,7 +352,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/">python</a></li></ul></li></ul>
     </div>
@@ -345,7 +367,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li></ul>
     </div>
@@ -355,7 +377,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
