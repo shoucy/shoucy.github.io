@@ -59,12 +59,12 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://shoucy.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://shoucy.github.io"></form>
       </div>
     </div>
   </div>
@@ -108,6 +108,7 @@
 <p>Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。</p>
 <p>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
 <p>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p>
+<p>Docker镜像逐渐成为企业交付的标准，必须要掌握。</p>
 <p>官网：<a target="_blank" rel="noopener" href="https://www.docker.com/">https://www.docker.com/</a></p>
 <h2 id="Docker的历史"><a href="#Docker的历史" class="headerlink" title="Docker的历史"></a>Docker的历史</h2><p>2010年搞IT的几个年轻人，在美国成立了一家公司——<strong>DotCloud</strong>。通过paas的云计算服务。他们将自己的容器化技术，命名为Docker。</p>
 <p>Docker起步阶段，没有引起行业的注意，DotCloud眼看凉凉。2013年为了将技术延续下去，决定将Docker开源，一开惊人，越来越多人发现了Docker的优点！</p>
@@ -316,11 +317,129 @@
 
 <p>如果没有在构建时指明挂载，那就只能在创建容器时手动 <code>-v</code> 了。</p>
 <p><code>--volumes-from</code> 可以实现容器间的数据共享。</p>
+<h2 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h2><p>DockerFile用来构建Docker文件</p>
+<ol>
+<li>编写一个docker文件</li>
+<li>通过 <code>docker build</code> 构建成一个镜像</li>
+<li><code>docker run</code> 运行镜像</li>
+<li>docker push 发布镜像（DockerHub、阿里云镜像）</li>
+</ol>
+<p>DockerFile面向开发，做镜像就应该使用DockerFile。</p>
+<p>完整的轨迹：</p>
+<ol>
+<li>DockerFile：构建文件，定义一切的步骤，源代码。</li>
+<li>DockerImages：通过DockerFile构建生成的镜像，最终发布和运行的产品。</li>
+<li>DockerContaner：运行并提供服务</li>
+</ol>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p><img src="/2021/07/19/Docker/dockerfile-command.jpg" alt="DockerFile指令"></p>
+<table>
+<thead>
+<tr>
+<th>DockerFile 指令</th>
+<th>指令简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FROM</td>
+<td>DockerFile的第一行指令必须是FROM，FROM后跟基础镜像的名称，我们将基于这个镜像构建我们的容器。</td>
+</tr>
+<tr>
+<td>MAINTAINER</td>
+<td>镜像作者信息，标准格式：姓名+邮箱。</td>
+</tr>
+<tr>
+<td>ENTERYPOINT</td>
+<td>容器启动时执行的命令。可以追加命令。</td>
+</tr>
+<tr>
+<td>CMD</td>
+<td>容器启动时运行的命令，只有最后一个生效</td>
+</tr>
+<tr>
+<td>RUN</td>
+<td>镜像构建时需要运行的命令。</td>
+</tr>
+<tr>
+<td>ADD</td>
+<td>拷贝本机文件或远程文件到镜像内。</td>
+</tr>
+<tr>
+<td>WORKDIR</td>
+<td>镜像的工作目录，为之后的RUN、CMD、ENTRYPOINT、COPY、ADD命令提供执行所在的目录。</td>
+</tr>
+<tr>
+<td>VOLUME</td>
+<td>设置容器卷（挂载主机的目录）。</td>
+</tr>
+<tr>
+<td>EXPOSE</td>
+<td>指定容器对外暴露的端口。</td>
+</tr>
+<tr>
+<td>COPY</td>
+<td>将文件拷贝到镜像目录中。</td>
+</tr>
+<tr>
+<td>ENV</td>
+<td>构建时设置环境变量。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>ENTERYPOINT和CMD的区别</strong></p>
+<p>在使用run命令时，追加的命令会将CMD指令内的内容覆盖，追加在ENTRYPOINT后</p>
+<p>ENTRYPOINT指令，往往用于设置容器启动后的<strong>第一个命令</strong>，这对一个容器来说往往是固定的。<br>CMD指令，往往用于设置容器启动的第一个命令的<strong>默认参数</strong>，这对一个容器来说可以是变化的。<br>docker run <command>往往用于给出替换CMD的<strong>临时参数</strong>。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> centos</span><br><span class="line"><span class="keyword">MAINTAINER</span> shoucy&lt;shouchengyu@outlook.com&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /user/<span class="built_in">local</span></span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum -y install vim</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yum -y install net-tools</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/bash</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>运行DockerFile</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker build -f dockerfile -t 镜像名[:tag] .</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>研究他人镜像</p>
+<p>通过 <code>docker history</code> :</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker history mysql</span><br></pre></td></tr></table></figure>
+
+<p>当然最好还是直接看dockerfile</p>
+<h3 id="push"><a href="#push" class="headerlink" title="push"></a>push</h3><p>首先要登陆：docker login</p>
+<p>然后docker push </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/07/19/Docker/" data-id="ckrgf8jil000a1svh39tif63a" data-title="Docker" class="article-share-link">Teilen</a>
+      <a data-url="https://shoucy.github.io/2021/07/19/Docker/" data-id="ckshhjfp4000nvgvh3qg446kw" data-title="Docker" class="article-share-link">Compartir</a>
       
       
       
@@ -620,7 +739,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/07/11/logging/" data-id="ckrgf8jik00091svhgt5r2tvk" data-title="logging——python日志模块" class="article-share-link">Teilen</a>
+      <a data-url="https://shoucy.github.io/2021/07/11/logging/" data-id="ckshhjfom0001vgvh4f6zb8pf" data-title="logging——python日志模块" class="article-share-link">Compartir</a>
       
       
       
@@ -777,7 +896,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shoucy.github.io/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" data-id="ckrgf8jii00071svhh04zd5h8" data-title="计算机基本概念" class="article-share-link">Teilen</a>
+      <a data-url="https://shoucy.github.io/2021/06/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" data-id="ckshhjfoh0000vgvh14ki0dh7" data-title="计算机基本概念" class="article-share-link">Compartir</a>
       
       
       
@@ -797,7 +916,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Kategorien</h3>
+    <h3 class="widget-title">Categorías</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">编程学习笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/">python</a></li></ul></li></ul>
     </div>
@@ -812,7 +931,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li></ul>
     </div>
@@ -822,7 +941,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
@@ -852,7 +971,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2021 Shou Chengyu<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
