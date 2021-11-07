@@ -173,29 +173,26 @@ tomcat的目录结构大致如下：
 
 
 
-### 发布一个web网站
+### webapps目录结构
 
-webapps下的文件应该是这样一个目录：
+如果部署的是一个java web项目，webapps下的文件应该是这样一个目录：
 
 ```
---webapps
-	-ROOT
-	-{{website name}}
-		-WEB-INF
-			-classes:java程序
-			-lib:web应用所依赖jar
-			-web.xml:配置文件
-		-index.html:默认首页
-		-static
-			-css
-			-js
-			-img
-		-...
+└─ 项目根目录
+   ├─ WEB-INF
+   │   ├─ web.xml：web项目核心配置文件
+   │   ├─ classes文件夹：放置字节码文件
+   │   └─ lib文件夹:web应用所依赖jar
+   ├─ index.html:默认首页
+   └─ static
+       ├─ css
+       ├─ js
+       └─ img
 ```
 
+*如果要部署的是一个静态资源项目，那么比tomcat更好的选择有很多，比如Nginx、Apache Server。*
 
 
-# 网络
 
 ## HTTP
 
@@ -272,13 +269,13 @@ Cache-Control：缓存控制
 
 
 
-# Servlet
+## Servlet
 
-Servlte是sun公司开发的一门动态web技术。
+Servlte是sun公司开发的一门动态web技术。它是两个单词的缩写 server applet。
 
-Servlet是一个接口，如果我们要编写Servlet程序，需要编写一个类实现Servlet，再把它部署到服务器。
+既然我们需要把java web项目丢在了服务器上，由服务器来执行，必然是没有main方法可以运行的。那么我们的任意java代码都可以被服务器调取吗？当然不是的，只有遵守一定的规则（接口），tomcat才可以识别，接着创建实例调取方法等。而这个规则通常就是servlet。
 
-我们把实现Servlet接口的java程序，也叫做Servlet。
+Servlet也是一个接口，我们的类只要实现Servlet，就可以被tomcat识别。我们把实现Servlet接口的java程序，也叫做Servlet。
 
 Servlet在sun公司有两个实现类：
 
@@ -288,7 +285,9 @@ Servlet在sun公司有两个实现类：
 
 其中HttpServlet是GenericServlet的抽象实现类
 
-## maven dependencies
+### dependencies
+
+maven dependencies：
 
 ```xml
 <dependency>
@@ -303,11 +302,11 @@ Servlet在sun公司有两个实现类：
 </dependency>
 ```
 
-## hello,servlet(demo)
+### demo
 
 一个简单的demo
 
-### 编写servlet代码
+#### 编写servlet代码
 
 ```java
 package com.scy.servlet;
@@ -335,7 +334,7 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-### 编写servlet映射
+#### 编写servlet映射
 
 为什么需要映射呢？
 
@@ -356,13 +355,57 @@ web.xml：
 </servlet-mapping>
 ```
 
-### 配置tomcat
+#### 配置tomcat
 
 tomcat配置项目路径即可
 
-### 启动测试
+#### 启动测试
 
 浏览器访问项目路径加请求路径（/hello）即可
+
+### 原理
+
+1. 当服务器接收到客户端浏览器的请求后，会解析请求URL路径，获取访问的Servlet资源路径。
+2. 查找web.xml文件，是否有对应的 `<url-pattern>` 标签体内容。
+3. 如果有，找到对应的  `<servlet-class>` 全类名。
+4. tomcat会将字节码文件加载至内存，并创建对象。
+5. 调用其方法。
+
+### servlet的生命周期
+
+servlet有几个生命周期方法：
+
+#### init()
+
+被创建时调用，只执行一次。默认情况下，在第一次被访问时servlet会被创建。
+
+*可以通过修改web.xml中的 `<load-on-startup>` 标签进行修改，为负整数则第一次访问创建，正整数时服务器启动时创建。*
+
+这也说明了，**servlet是单例的**。不要在servlet中定义成员变量！
+
+#### service()
+
+每次被访问时调用一次。
+
+#### distory()
+
+servlet**被销毁前执行**。只有服务器正常关闭才会触发。一般用于释放资源。
+
+### Servlet3.0注解配置
+
+servlet3.0后支持了注解配置，可以不创建啰嗦的web.xml了。
+
+在class上添加注解以完成地址映射：
+
+```java
+@WebServlet(urlPatterns="/demo")
+```
+
+也可以省略属性名，会自动作为 `value` 属性：
+
+```java
+@WebServlet("/demo")
+```
 
 
 
