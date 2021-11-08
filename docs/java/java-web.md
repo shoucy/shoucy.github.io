@@ -182,7 +182,7 @@ tomcat的目录结构大致如下：
    ├─ WEB-INF
    │   ├─ web.xml：web项目核心配置文件
    │   ├─ classes文件夹：放置字节码文件
-   │   └─ lib文件夹:web应用所依赖jar
+   │   └─ lib文件夹: web应用所依赖jar
    ├─ index.html:默认首页
    └─ static
        ├─ css
@@ -600,23 +600,23 @@ web服务器接收到http请求，会分别创建代表请求的`HttpServletRequ
 
 ```java
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        // 获取下载文件名
-        String realPath = "E:\\IdeaProjects\\XXXXX\\壁纸.png";
-        String fileName = realPath.substring(realPath.lastIndexOf("\\") + 1);
-        // 使浏览器支持Content-Disposition
-        resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "utf-8"));
-        // 获取文件输入流
-        FileInputStream in = new FileInputStream(realPath);
-        int len = 0;
-        byte[] buffer = new byte[1024];
-        // 获取OutputStream对象
-        ServletOutputStream out = resp.getOutputStream();
-        while ((len = in.read(buffer)) > 0) {
-            out.write(buffer, 0, len);
-        }
-        in.close();
-        out.close();
+    // 获取下载文件名
+    String realPath = "E:\\IdeaProjects\\XXXXX\\壁纸.png";
+    String fileName = realPath.substring(realPath.lastIndexOf("\\") + 1);
+    // 使浏览器支持Content-Disposition
+    resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "utf-8"));
+    // 获取文件输入流
+    FileInputStream in = new FileInputStream(realPath);
+    int len = 0;
+    byte[] buffer = new byte[1024];
+    // 获取OutputStream对象
+    ServletOutputStream out = resp.getOutputStream();
+    while ((len = in.read(buffer)) > 0) {
+        out.write(buffer, 0, len);
     }
+    in.close();
+    out.close();
+}
 ```
 
 #### 重定向
