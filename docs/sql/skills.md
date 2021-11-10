@@ -2,7 +2,7 @@
 
 如果数据库表字段有书写详细的备注，利用以下sql语句可以查询出相应的数据库文档：
 
-```mysql
+```sql
 SELECT COLUMN_NAME                     AS `列名`,
        COLUMN_TYPE                     AS `数据类型`,
        COLUMN_KEY                      AS `键`,
