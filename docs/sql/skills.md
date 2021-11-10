@@ -9,8 +9,8 @@ SELECT COLUMN_NAME                     AS `列名`,
        IF(IS_NULLABLE = 'NO', '是', '') AS `非空`,
        COLUMN_COMMENT                  AS `注释说明`
 FROM information_schema.`COLUMNS`
-WHERE TABLE_SCHEMA = 'jpas6.0-gbkh' # 数据库名
-  AND TABLE_NAME = 'jpas_gbrm_appoint'; # 表明
+WHERE TABLE_SCHEMA = ? # 数据库名
+  AND TABLE_NAME = ?; # 表明
 ```
 
 JetBrains家的DataGrip工具可将输出结果复制为MarkDown表格。
