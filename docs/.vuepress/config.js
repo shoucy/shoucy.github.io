@@ -1,7 +1,7 @@
 module.exports = {
     lang: 'zh-CN',
-    title: '去海边的路上',
-    description: '我的个人笔记与心得',
+    title: 'Ideal',
+    description: '希望这个博客见证我成为更好的人',
   
     themeConfig: {
       logo: 'https://vuejs.org/images/logo.png',
