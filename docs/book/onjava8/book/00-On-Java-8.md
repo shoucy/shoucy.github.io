@@ -1,34 +1,4 @@
-<div align="center">
-    <img src="https://raw.githubusercontent.com/LingCoder/OnJava8/master/docs/images/cover.jpg" alt="cover" width="100%"/>
-</div>
-
-<div style="page-break-after: always;"></div>
-
-<center style="165px 0px 0px">
-<p style="font-size: 6em;font-weight: bold;text-align: center"> On Java 8 </p>
-</center>
-
-<center style="165px 0px 0px">
-<p style="font-size: 2em;font-weight: bold;text-align: center">Bruce Eckel</p>
-
-</center>
-
-<center> MindView LLC </center>
-
-
-<center>2017</center>
-
-
-<center>©MindView LLC 版权所有</center>
-
-
-
-
-
-<div style="page-break-after: always;"></div>
-
-
-
+![cover](../images/cover.jpg)
 
 # On Java 8
 
@@ -38,7 +8,6 @@
 
 
 **作者 Bruce Eckel, President, MindView LLC.**
-
 
 **版本号：7**
 
@@ -60,5 +29,3 @@ Java 是甲骨文公司（Oracle. Inc.）的商标。Windows 95，Windows NT，W
 
 本书是为平板电脑和计算机设备制作的的电子书，非传统纸质版书籍。 因此所有布局和格式设计旨在优化您在各种电子书阅读平台和系统上的观看体验。
 封面由 Daniel Will-Harris 设计，[www.Will-Harris.com](http://www.Will-Harris.com)。
-
-<div style="page-break-after: always;"></div>
