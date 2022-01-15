@@ -4,6 +4,6 @@ module.exports = {
     description: '希望这个博客见证我成为更好的人',
   
     themeConfig: {
-      logo: 'https://vuejs.org/images/logo.png',
+      logo: '/favicon.ico',
     },
   }
