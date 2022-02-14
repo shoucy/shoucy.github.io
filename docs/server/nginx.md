@@ -25,7 +25,7 @@ Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器，同时�
 
 nginx及其它服务器受欢迎程度的趋势：
 
-![活跃站点的 Web 服务器市场份额](nginx.assets/wss-active-share.png)
+![活跃站点的 Web 服务器市场份额](./nginx.assets/wss-active-share.png)
 
 图片来源：[https://news.netcraft.com/](https://news.netcraft.com/)
 
@@ -39,7 +39,7 @@ nginx及其它服务器受欢迎程度的趋势：
 
 nginx.org下载下面这个版本
 
-![image-20220214220251855](nginx.assets/image-20220214220251855.png)
+![image-20220214220251855](./nginx.assets/image-20220214220251855.png)
 
 安装依赖：
 
@@ -68,7 +68,7 @@ mkdir /var/temp/nginx -p
 
 在nginx目录执行配置：
 
-![image-20220214222254649](nginx.assets/image-20220214222254649.png)
+![image-20220214222254649](./nginx.assets/image-20220214222254649.png)
 
 如果成功产生makefile配置文件，执行make命令即可编译
 
