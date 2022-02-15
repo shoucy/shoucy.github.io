@@ -68,7 +68,32 @@ mkdir /var/temp/nginx -p
 
 在nginx目录执行配置：
 
-![image-20220214222254649](./nginx.assets/image-20220214222254649.png)
+```shell
+./configure \
+--prefix=/usr/local/nginx \
+--pid-path=/var/run/nginx/nginx.pid \
+--lock-path=/var/lock/nginx.lock \
+--error-log-path=/var/log/nginx/error.log \
+--http-log-path=/var/log/nginx/access.log \
+--with-http_gzip_static_module \
+--http-client-body-temp-path=/var/temp/nginx/client \
+--http-proxy-temp-path=/var/temp/nginx/proxy \
+--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \
+--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \
+--http-scgi-temp-path=/var/temp/nginx/scgi
+```
+
+具体说明：
+
+- `--prefix` 选项是配置安装的路径，如果不配置该选项，安装后可执行文件默认放在/usr/local/bin，库文件默认放在/usr/local/lib，配置文件默认放在/usr/local/etc，其它的资源文件放在/usr/local/share，比较凌乱。
+
+  如果配置 `--prefix` ，如：`./configure --prefix=/usr/local/test` 可以把所有资源文件放在/usr/local/test的路径中，不会杂乱。
+
+  用了 `—prefix` 选项的另一个好处是卸载软件或移植软件。当某个安装的软件不再需要时，只须简单的删除该安装目录，就可以把软件卸载得干干净净；移植软件只需拷贝整个目录到另外一个机器即可（相同的操作系统）。当然要卸载程序，也可以在原来的make目录下用一次 `make uninstall` ，但前提是make文件指定过 `uninstall` 。
+
+- 
+
+
 
 如果成功产生makefile配置文件，执行make命令即可编译
 
@@ -76,9 +101,10 @@ make install即可安装
 
 ## 基本操作
 
-./nginx  开启
+- `./neginx -t` 测试文件正确性
 
-停止 ./nginx -s stop
+- `./nginx` 开启
+-  `./nginx -s stop` 停止
 
-重新加载 ./nginx -s reload
+- `./nginx -s reload` 重新加载
 
