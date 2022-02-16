@@ -54,7 +54,7 @@ $ mv mysql-5.7.26-linux-glibc2.12-x86_64 /usr/local/mysql
 
 ```shell
 # tail -f [文件名]
-$ tail -f nohup.o
+$ tail -f nohup.out
 ```
 
 #### less
@@ -62,8 +62,8 @@ $ tail -f nohup.o
 我最爱用的linux文件阅读工具
 
 ```shell
-# less -f [文件名]
-$ less -f nohup.out
+# less [文件名]
+$ less - nohup.out
 ```
 
 阅读状态拥有很多命令：
@@ -78,6 +78,8 @@ $ less -f nohup.out
 
 - `h` ：查看帮助文档
 - 百度一下:dog:(国际狗头)
+
+
 
 
 

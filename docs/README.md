@@ -8,9 +8,15 @@
 
 
 
-## 各类中间件笔记
+## 服务器相关笔记
 
-[docker 学习笔记](./coding/docker.md)
+[linux 笔记](./server/linux.md)
+
+[docker 笔记](./server/docker.md)
+
+[nginx 笔记](./server/nginx.md)
+
+
 
 
 
