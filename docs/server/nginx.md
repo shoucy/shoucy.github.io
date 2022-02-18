@@ -1,4 +1,6 @@
-## 集群
+## Nginx？yes！
+
+### 关于集群
 
 集群的优点：
 
@@ -14,7 +16,7 @@ FBI Warning：
 2. 定时任务要作为独立节点，我们应避免多个节点同时跑一模一样的定时任务。定时任务应单独做成一个服务。
 3. 内网要互通。
 
-## Nginx？yes！
+### why nginx
 
 Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的Rambler.ru站点（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。
 
@@ -37,11 +39,13 @@ nginx及其它服务器受欢迎程度的趋势：
 
 ## 下载安装
 
-nginx.org下载下面这个版本
+### 下载nginx源码
+
+浏览器在[nginx.org](nginx.org) ，下载下面这个版本：
 
 ![image-20220214220251855](./nginx.assets/image-20220214220251855.png)
 
-安装依赖：
+### 安装依赖
 
 ```shell
 # 安装依赖环境
@@ -54,13 +58,15 @@ yum install -y zlib zlib-devel
 yum install -y openssl openssl-devel
 ```
 
-解压：
+### 解压nginx源码
 
 ```shell
 tar -zxvf nginx-1.16.1.tar.gz
 ```
 
-编译之前要创建nginx临时目录，如果不创建、在启动nginx过程中会报错
+### 编译nginx
+
+编译之前要创建nginx临时目录，如果不创建、在启动nginx过程中会报错。
 
 ```shell
 mkdir /var/temp/nginx -p
@@ -76,6 +82,7 @@ mkdir /var/temp/nginx -p
 --error-log-path=/var/log/nginx/error.log \
 --http-log-path=/var/log/nginx/access.log \
 --with-http_gzip_static_module \
+--with-http_ssl_module \
 --http-client-body-temp-path=/var/temp/nginx/client \
 --http-proxy-temp-path=/var/temp/nginx/proxy \
 --http-fastcgi-temp-path=/var/temp/nginx/fastcgi \
@@ -91,20 +98,20 @@ mkdir /var/temp/nginx -p
 
   用了 `—prefix` 选项的另一个好处是卸载软件或移植软件。当某个安装的软件不再需要时，只须简单的删除该安装目录，就可以把软件卸载得干干净净；移植软件只需拷贝整个目录到另外一个机器即可（相同的操作系统）。当然要卸载程序，也可以在原来的make目录下用一次 `make uninstall` ，但前提是make文件指定过 `uninstall` 。
 
-- 
+- `--with-http_ssl_module` ：安装此模块可使nginx提供SSL加密功能，如果我们想要使用https，需要安装此模块。
 
 
 
-如果成功产生makefile配置文件，执行make命令即可编译
+如果成功产生makefile配置文件，执行 `make` 命令即可编译。
 
-make install即可安装
+`make` 结束后 ，执行`make install` 命令即可安装nginx。
 
 ## 基本操作
 
-- `./neginx -t` 测试文件正确性
+常用命令：
 
 - `./nginx` 开启
--  `./nginx -s stop` 停止
-
+- `./nginx -s stop` 停止
+- `./nginx -t` 测试文件正确性
 - `./nginx -s reload` 重新加载
 
