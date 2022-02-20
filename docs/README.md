@@ -1,4 +1,6 @@
-> You are all I see
+> You believe but what you see
+>
+> You receive but what you give
 
 
 
