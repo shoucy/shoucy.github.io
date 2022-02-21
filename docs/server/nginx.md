@@ -129,7 +129,7 @@ mkdir /var/temp/nginx -p
 > - --with-pcre-jit — 编译PCRE库时增加“实时编译（pcre_jit）”支持。
 > - --with-zlib=path — 设置zlib库源文件的路径地址。zlib库的发行版(version 1.1.3 — 1.2.5)需要先从zlib站点下载并解压缩。 剩下的安装工作由nginx的./configure和make命令来完成。该库应用于 ngx_http_gzip_module模块。
 > - --with-cc-opt=parameters — 设置将会添加额外参数到CFLAGS变量中。当在FreeBSD使用系统PCRE库时，需要指定 `--with-cc-opt="-I /usr/local/include"` 。 如果需要增加select()方法所支持的文件数量，也可以参照如下方式指定：`--with-cc-opt="-D FD_SETSIZE=2048"` 。
-> - *-with-ld-opt=parameters — 设置将会在链接（linking）过程中使用的额外参数。当在FreeBSD使用系统PCRE库时，需要指定 --with-ld-opt="-L /usr/local/lib"。
+> - --with-ld-opt=parameters — 设置将会在链接（linking）过程中使用的额外参数。当在FreeBSD使用系统PCRE库时，需要指定 --with-ld-opt="-L /usr/local/lib"。
 >
 
 如果成功产生makefile配置文件，执行 `make` 命令即可编译。
@@ -153,8 +153,6 @@ mkdir /var/temp/nginx -p
 
 Nginx默认有两个进程：
 
-1. 
-
 1. master进程（主进程）
 2. worker进程（工作进程）
 
@@ -172,6 +170,22 @@ master进程是用来管理worker进程的，worker进程用来进行工作。ma
 举个例子，当我们执行 `./nginx -s stop` masker会将信号转发给worker，并不再接受及派发更多任务给worker。如果worker处于空闲状态，会直接退出。如果处于工作状态，会将当前工作执行完后再退出。
 
 再举个例子，如果有一个worker挂掉了，master会将任务暂时交给其它worker，并重新fork一个新的worker。
+
+
+
+## 老中医
+
+### 403 request entity too large
+
+因为nginx限制了body传输大小，修改nginx配置即可。
+
+```nginx
+http {
+    ...
+    client_max_body_size   50m;
+    ...
+}
+```
 
 
 
