@@ -115,3 +115,19 @@ mkdir /var/temp/nginx -p
 - `./nginx -t` 测试文件正确性
 - `./nginx -s reload` 重新加载
 
+
+
+## 遇到过的问题
+
+### 403 request entity too large
+
+因为nginx限制了body传输大小，修改nginx配置即可。
+
+```nginx
+http {
+    ...
+    client_max_body_size   50m;
+    ...
+}
+```
+
