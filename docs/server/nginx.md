@@ -53,7 +53,7 @@ nginx及其它服务器受欢迎程度的趋势：
 
 浏览器在[nginx.org](nginx.org) ，下载下面这个版本：
 
-![image-20220214220251855](./nginx.assets/image-20220214220251855.png)
+![image-20220214220251855](./nginx.assets/downloadNginx.png)
 
 
 
