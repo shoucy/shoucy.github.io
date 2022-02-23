@@ -4,7 +4,7 @@
 
 ## 计算机通识
 
-[java web 学习笔记](./coding/base.md)
+[计算机基础](./coding/base.md)
 
 
 
@@ -22,7 +22,7 @@
 
 ## Mysql笔记
 
-[sql注入解决实践](./sql/Sql Inject.md)
+[sql注入解决实践](./sql/SqlInject.md)
 
 [通过sql生成数据库表文档](./sql/skills.md)
 

@@ -76,7 +76,7 @@ yum install -y openssl openssl-devel
 ### 解压nginx源码
 
 ```shell
-tar -zxvf nginx-1.16.1.tar.gz
+tar -zxvf nginx-1.20.2.tar.gz
 ```
 
 
