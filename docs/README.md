@@ -22,7 +22,7 @@
 
 ## Mysql笔记
 
-[sql注入解决实践](./sql/SqlInject.md)
+[sql注入解决实践](./sql/sql-inject.md)
 
 [通过sql生成数据库表文档](./sql/skills.md)
 
@@ -48,7 +48,7 @@
 
 ## 书单
 
-[68 Bits of Unsolicited Advice](./translate/68 Bits of Unsolicited Advice)
+[68 Bits of Unsolicited Advice](./translate/68-bits-of-unsolicited-advice)
 
 [OnJava8中文版](./books/onjava8) (该翻译项目因实体书发售已在github闭源，实体书购买地址：**[www.OnJava8.com](http://www.onjava8.com/)**) 
 
