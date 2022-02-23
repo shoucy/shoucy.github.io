@@ -48,6 +48,8 @@
 
 ## 书单
 
+[68 Bits of Unsolicited Advice](./translate/68 Bits of Unsolicited Advice)
+
 [OnJava8中文版](./books/onjava8) (该翻译项目因实体书发售已在github闭源，实体书购买地址：**[www.OnJava8.com](http://www.onjava8.com/)**) 
 
 [【宋红康】MySQL数据库（mysql安装/基础/高级/优化）](./books/mysql)
@@ -59,3 +61,4 @@
 [互联网上的免费书籍 by 阮一峰](https://github.com/ruanyf/free-books)
 
 [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
+

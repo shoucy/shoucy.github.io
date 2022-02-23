@@ -10,7 +10,7 @@ SELECT COLUMN_NAME                     AS `列名`,
        COLUMN_COMMENT                  AS `注释说明`
 FROM information_schema.`COLUMNS`
 WHERE TABLE_SCHEMA = ? # 数据库名
-  AND TABLE_NAME = ?; # 表明
+  AND TABLE_NAME = ?; # 表名
 ```
 
 JetBrains家的DataGrip工具可将输出结果复制为MarkDown表格。
