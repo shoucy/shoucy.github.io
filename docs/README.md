@@ -2,11 +2,29 @@
 >
 > You receive but what you give
 
+## 计算机通识
+
+[java web 学习笔记](./coding/base.md)
+
 
 
 ## Java笔记
 
-[java web学习笔记](./java/java-web.md)
+[java web 学习笔记](./java/java-web.md)
+
+
+
+## Python笔记
+
+[logging 笔记](./python/logging.md)
+
+
+
+## Mysql笔记
+
+[sql注入解决实践](./sql/Sql Inject.md)
+
+[通过sql生成数据库表文档](./sql/skills.md)
 
 
 
@@ -18,7 +36,13 @@
 
 [nginx 笔记](./server/nginx.md)
 
+[服务器端安装chrome](./server/chrome.md)
 
+
+
+## 测试
+
+[Jemeter](./tests/jmeter)
 
 
 
