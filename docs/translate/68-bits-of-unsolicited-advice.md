@@ -4,10 +4,17 @@
 
 It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
 (For my 69th birthday I made [another batch](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/).)
+*今天是我的生日，我68了。我打算拉来一把摇椅，给年轻人一些建议。这里是我给予的68条简洁明了的忠告，作为我在我生日时对每一位你的礼物。*
 
-• Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.
+* Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.
 
-• Being enthusiastic is worth 25 IQ points.
+  *学会从那些你不认同甚至冒犯过你的人身上学习。看是否可以从他们所相信的事物中寻得真相。*
+
+* Being enthusiastic is worth 25 IQ points.
+  *保持热情抵得上25点IQ。*
+  ::: tip
+  人们的智商是以平均数字100和标准差15为正态分布的。2005年，林恩教授公布了一项“大胆”的研究成果，称“男性比女性的智商高5点”。随后，林恩还对世界各国大学生的平均智商进行了比较，结果发现，美国大学生智商为110，居全球之首，而英国大学生紧随其后，平均智商109。
+  :::
 
 • Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.
 
