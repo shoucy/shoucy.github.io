@@ -2,9 +2,9 @@
 
 
 
-It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
-(For my 69th birthday I made [another batch](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/).)
-*今天是我的生日，我68了。我打算拉来一把摇椅，给年轻人一些建议。这里是我给予的68条简洁明了的忠告，作为我在我生日时对每一位你的礼物。*
+It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.(For my 69th birthday I made [another batch](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/).)
+
+*今天是我的生日，我68了。我打算拉来一把摇椅，给年轻人一些建议。这里是我给予的68条简洁明了的忠告，作为我在我生日时对每一位你的礼物。（在我69岁生日时，我又写了一些[别的建议](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/)。）*
 
 * Learn how to learn from those you disagree with, or even offend you. See if you can find the truth in what they believe.
 
@@ -17,7 +17,9 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
   人们的智商是以平均数字100和标准差15为正态分布的。2005年，林恩教授公布了一项“大胆”的研究成果，称“男性比女性的智商高5点”。随后，林恩还对世界各国大学生的平均智商进行了比较，结果发现，美国大学生智商为110，居全球之首，而英国大学生紧随其后，平均智商109。
   :::
 
-• Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.
+* Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.
+
+  总是定一个deadline。deadline可以淘汰那些多余与平庸的事情。它防止你尝试做到完美，这样你就会将事情做地有所不同。而有所不同是件好事。
 
 • Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.
 
