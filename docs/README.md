@@ -12,6 +12,8 @@
 
 [java web 学习笔记](./java/java-web.md)
 
+[当我们在启动老java web项目时，我们在骂些什么？](./java/old-project.md)
+
 
 
 ## Python笔记

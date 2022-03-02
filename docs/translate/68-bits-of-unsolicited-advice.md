@@ -19,15 +19,23 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 * Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.
 
-  总是定一个deadline。deadline可以淘汰那些多余与平庸的事情。它防止你尝试做到完美，这样你就会将事情做地有所不同。而有所不同是件好事。
+  *总是定一个deadline。deadline可以淘汰那些多余与平庸的事情。它防止你尝试做到完美，这样你就会将事情做地有所不同。有所不同是件好事。*
 
-• Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.
+- Don’t be afraid to ask a question that may sound stupid because 99% of the time everyone else is thinking of the same question and is too embarrassed to ask it.
 
-• Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more.
+  *不要害怕问出一个听起来愚蠢的问题，因为99%的时候每个人其实都想问相同的问题却因为害怕尴尬而没问。*
 
-• A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier.
+- Being able to listen well is a superpower. While listening to someone you love keep asking them “Is there more?”, until there is no more.
 
-• Gratitude will unlock all other virtues and is something you can get better at.
+  *会倾听是一种超能力。当聆听某个喜欢的人时，善于询问“还有吗”，直到对方没有更多要讲。*
+
+* A worthy goal for a year is to learn enough about a subject so that you can’t believe how ignorant you were a year earlier.
+
+  *有一件有意义的年度目标是充分的去学习一个课题，你将会对自己一年前的无知感到难以置信。*
+
+- Gratitude will unlock all other virtues and is something you can get better at.
+
+  *感恩可以使你解锁其它美德，还是一件你可以做到更好的事情。*
 
 • Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends.
 
