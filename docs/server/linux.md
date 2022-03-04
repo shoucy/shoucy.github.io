@@ -7,6 +7,8 @@
 ```shell
 # tar -zxvf [压缩包]
 $ tar -zxvf nginx-1.20.2.tar.gz
+# 通过-C 指定解压后文件位置
+$ tar -zxvf apache-tomcat-7.0.99.tar.gz -C /usr/local/
 ```
 
 

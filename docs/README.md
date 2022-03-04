@@ -34,6 +34,8 @@
 
 [linux 笔记](./server/linux.md)
 
+[常见环境安装](./server/environment.md)
+
 [docker 笔记](./server/docker.md)
 
 [nginx 笔记](./server/nginx.md)
