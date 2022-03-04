@@ -37,9 +37,13 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
   *感恩可以使你解锁其它美德，还是一件你可以做到更好的事情。*
 
-• Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends.
+- Treating a person to a meal never fails, and is so easy to do. It’s powerful with old friends and a great way to make new friends.
 
-• Don’t trust all-purpose glue.
+  *请别人吃饭是不会被拒绝的，而且也很容易就可以做。无论对待老朋友还是新朋友都很有效。*
+
+- Don’t trust all-purpose glue.
+
+  *不要相信万能胶（这里的万能胶应该类似于万金油）*
 
 • Reading to your children regularly will bond you together and kickstart their imaginations.
 
