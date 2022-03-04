@@ -29,7 +29,7 @@ export PATH=$PATH:${JAVA_HOME}/bin
 
 配置完毕后是这个样子：
 
-![image-20220304100646535](./java-environment.assets/image-20220304100646535.png)
+![image-20220304100646535](./environment.assets/image-20220304100646535.png)
 
 （`export TMOUT=300` 是我的服务器自带的，我看别人的好像没有）
 
@@ -56,11 +56,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 
 下载历史版本时，安装包在bin目录下：
 
-![image-20220304103507370](./java-environment.assets/image-20220304103507370.png)
+![image-20220304103507370](./environment.assets/image-20220304103507370.png)
 
 下载以tar.gz为后缀的版本：
 
-![image-20220304142816042](java-environment.assets/image-20220304142816042.png)
+![image-20220304142816042](./environment.assets/image-20220304142816042.png)
 
 ### 解压
 
