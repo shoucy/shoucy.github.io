@@ -414,7 +414,7 @@ mysql> flush privileges;
 
 [https://www.openoffice.org/download/](https://www.openoffice.org/download/)
 
-![image-20220305162509689](environment.assets/image-20220305162509689.png)
+![image-20220305162509689](./environment.assets/image-20220305162509689.png)
 
 下载完毕传输到服务器即可。
 
@@ -491,10 +491,6 @@ $ yum groupinstall "X Window System"
 ```shell
 $ rpm -erpm -qa |grep openofficerpm -qa |grep ooobasis
 ```
-
-
-
-
 
 
 
