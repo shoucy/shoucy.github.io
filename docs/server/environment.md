@@ -192,7 +192,7 @@ $ rpm -ivh mysql-community-server-8.0.25-1.el7.x86_64.rpm
 
 **安装是有顺序要求的**，顺序不对会有缺少依赖的报错。
 
-::: warning
+::: tip
 
 安装 `mysql-community-libs` 时可能会出现以下情形：
 
@@ -394,7 +394,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 
 
 
-### 关于用户端口限制
+#### 关于用户端口限制
 
 通过 `mysql` 逻辑库中的usr表配置用户的ip限制，root的默认的 `Host` 是localhost。此时是无法通过网络访问到数据库的。
 
@@ -405,6 +405,19 @@ mysql> use mysql;
 mysql> update user set Host = '%' where User = 'root';
 mysql> flush privileges;
 ```
+
+
+
+#### 可能需要修改的配置
+
+mysql的配置文件一般位于:/etc/my.cnf
+
+```c
+# 使查询语句大小写不敏感
+lower_case_table_names=1
+```
+
+
 
 
 
@@ -457,7 +470,7 @@ $ netstat -lnp |grep
 $ ps -ef|grep soffice
 ```
 
-::: warning
+::: tip
 
 如果启动时出现：
 
@@ -474,7 +487,7 @@ $ /opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port
 
 :::
 
-::: warning
+::: tip
 
 如果启动时提醒 `no suitable windowing system found, exiting`, 需要：
 
