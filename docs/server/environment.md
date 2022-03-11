@@ -24,7 +24,7 @@ $ tar -zxvf jdk-7u80-linux-x64.tar.gz -C /usr/local/
 
 编写位置在文件最下方，应在 `unset -f pathmunge` 之下。
 
-```
+```properties
 # java environment
 export JAVA_HOME=/usr/local/java/jdk1.7.0_80
 export CLASSPATH=.:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar

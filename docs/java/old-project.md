@@ -4,6 +4,11 @@
 
 ### idea启动tomcat应用，卡在 `Deployment of web application directory` 不动了
 
+```
+三月 11, 2022 10:56:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory [D:\apache-tomcat-7.0.99\webapps\manager] has finished in [557] ms
+```
+
 检查 tomcat文件夹， bin 目录下 catalina.bat 文件。可能增加了 `JAVA_OPTS` 配置。注释掉即可。
 
 修改前为：
@@ -32,3 +37,13 @@ set JAVA_OPTS=-Xms1024m -Xmx4096m -XX:PermSize=128m -XX:MaxPermSize=256m
 
 ![image-20220304090108849](./old-project.assets/image-20220304090108849.png)
 
+
+
+### 一个或多个listeners启动失败
+
+```
+11-Mar-2022 09:54:17.248 严重 [RMI TCP Connection(5)-127.0.0.1] org.apache.catalina.core.StandardContext.startInternal 一个或多个listeners启动失败，更多详细信息查看对应的容器日志文件
+11-Mar-2022 09:54:17.251 严重 [RMI TCP Connection(5)-127.0.0.1] org.apache.catalina.core.StandardContext.startInternal 由于之前的错误，Context[]启动失败
+```
+
+又是因为tomcat的lib中缺少一些愚蠢的jar包。有程序员把项目的依赖直接丢在tomcat的lib中了。把启动这个项目成功过的tomcat中的jar粘贴进来即可。
