@@ -4,11 +4,11 @@
 
 当前最新版本下载地址：
 
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 历史版本下载地址：　　
 
-https://www.oracle.com/java/technologies/downloads/archive/
+[https://www.oracle.com/java/technologies/downloads/archive/](https://www.oracle.com/java/technologies/downloads/archive/)
 
 可下载rpm安装包与tar.gz压缩包，我在这里**选择使用tar.gz**。
 
@@ -56,11 +56,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 
 当前最新版本下载地址：
 
-https://tomcat.apache.org/
+[https://tomcat.apache.org/](https://tomcat.apache.org/)
 
 历史版本下载地址：
 
-https://archive.apache.org/dist/tomcat/
+[https://archive.apache.org/dist/tomcat/](https://archive.apache.org/dist/tomcat/)
 
 下载历史版本时，安装包在bin目录下：
 

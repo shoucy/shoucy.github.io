@@ -1,4 +1,4 @@
-# POI和easyExcle
+# POI
 
 ## 应用场景
 
@@ -11,13 +11,14 @@
 
 > Apache POI是Apache软件基金会的开放源码函式库，POI提供API给Java程序对Microsoft Office格式档案读和写的功能。
 >
-> HSSF － 提供读写Microsoft Excel格式档案的功能。
-> XSSF － 提供读写Microsoft Excel OOXML格式档案的功能。
-> HWPF － 提供读写Microsoft Word格式档案的功能。
-> HSLF － 提供读写Microsoft PowerPoint格式档案的功能。
-> HDGF － 提供读写Microsoft Visio格式档案的功能。
 
+POI主要包含以下组件：
 
+1. HSSF － 提供读写Microsoft Excel格式档案的功能。
+2. XSSF － 提供读写Microsoft Excel OOXML格式档案的功能。
+3. HWPF － 提供读写Microsoft Word格式档案的功能。
+4. HSLF － 提供读写Microsoft PowerPoint格式档案的功能。
+5. HDGF － 提供读写Microsoft Visio格式档案的功能。
 
 ### 导入
 
