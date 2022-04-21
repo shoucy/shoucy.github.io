@@ -76,7 +76,7 @@ abcmangodef47
 javap -c Concatenation
 ```
 这里的 `-c` 标志表示将生成 JVM 字节码。我们剔除不感兴趣的部分，然后做细微的修改，于是有了以下的字节码：
-```x86asm
+``````
 public static void main(java.lang.String[]); 
  Code:
   Stack=2, Locals=3, Args_size=1
@@ -126,7 +126,7 @@ public class WhitherStringBuilder {
 }
 ```
 现在运行 `javap -c WhitherStringBuilder`，可以看到两种不同方法（我已经去掉不相关的细节）对应的字节码。首先是 `implicit()` 方法：
-```x86asm
+``````
 public java.lang.String implicit(java.lang.String[]); 
 0: ldc #2 // String 
 2: astore_2
@@ -161,7 +161,7 @@ public java.lang.String implicit(java.lang.String[]);
 注意从第 16 行到第 48 行构成了一个循环体。第 16 行：对堆栈中的操作数进行“大于或等于的整数比较运算”，循环结束时跳转到第 51 行。第 48 行：重新回到循环体的起始位置（第 12 行）。注意：`StringBuilder` 是在循环内构造的，这意味着每进行一次循环，会创建一个新的 `StringBuilder` 对象。
 
 下面是 `explicit()` 方法对应的字节码：
-```x86asm
+``````
 public java.lang.String explicit(java.lang.String[]); 
 0: new #3 // StringBuilder 
 3: dup

@@ -1814,7 +1814,7 @@ true
 
 试图在 **Erased.java** 中 `new T()` 是行不通的，部分原因是由于擦除，部分原因是编译器无法验证 **T** 是否具有默认（无参）构造函数。但是在 C++ 中，此操作自然，直接且安全（在编译时检查）：
 
-```C++
+```c++
 // generics/InstantiateGenericType.cpp
 // C++, not Java!
 

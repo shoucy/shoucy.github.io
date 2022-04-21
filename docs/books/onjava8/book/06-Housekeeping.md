@@ -776,7 +776,7 @@ public class InitialValues {
 
 输出：
 
-```Java
+```java
 Data type Initial value
 boolean false
 char[NUL]

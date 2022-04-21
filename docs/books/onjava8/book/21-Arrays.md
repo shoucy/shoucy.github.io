@@ -273,13 +273,13 @@ e.length = 2
 
 下一个数组初始化可以被看做是一个“动态聚合初始化”。 **d** 使用的聚合初始化必须在 **d** 定义处使用，但是使用第二种语法，你可以在任何地方创建和初始化数组对象。例如，假设 **hide()** 是一个需要使用一系列的 **BeryliumSphere**对象。你可以这样调用它：
 
-```Java
+```java
 hide(d);
 ```
 
 你也可以动态地创建你用作参数传递的数组：
 
-```Java
+```java
 hide(new BerylliumSphere[]{
     new BerlliumSphere(),
     new BerlliumSphere()
@@ -290,7 +290,7 @@ hide(new BerylliumSphere[]{
 
 表达式：
 
-```Java
+```java
 a = d;
 ```
 
@@ -308,7 +308,7 @@ a = d;
 
 下面，我们返回一个 **字符串** 数组：
 
-```Java
+```java
 // arrays/IceCreamFlavors.java
 // Returning arrays from methods
 import java.util.*;
@@ -369,7 +369,7 @@ public class IceCreamFlavors {
 
 要创建多维的基元数组，你要用大括号来界定数组中的向量：
 
-```Java
+```java
 // arrays/MultidimensionalPrimitiveArray.java
 import java.util.*;
 
@@ -393,7 +393,7 @@ public class MultidimensionalPrimitiveArray {
 
 你也可以使用 **new** 分配数组。这是一个使用 **new** 表达式分配的三维数组：
 
-```Java
+```java
 // arrays/ThreeDWithNew.java
 import java.util.*;
 
@@ -414,7 +414,7 @@ public class ThreeDWithNew {
 
 组成矩阵的数组中每一个向量都可以是任意长度的（这叫做不规则数组）：
 
-```Java
+```java
 // arrays/RaggedArray.java
 import java.util.*;
 
@@ -446,7 +446,7 @@ public class RaggedArray {
 
 非基元的对象数组也可以定义为不规则数组。这里，我们收集了许多使用大括号的 **new** 表达式：
 
-```Java
+```java
 // arrays/MultidimensionalObjectArrays.java
 import java.util.*;
 
@@ -473,7 +473,7 @@ Sphere 10, Sphere 11, Sphere 12, Sphere 13]]
 
 数组初始化时使用自动装箱技术：
 
-```Java
+```java
 // arrays/AutoboxingArrays.java
 import java.util.*;
 
@@ -497,7 +497,7 @@ public class AutoboxingArrays {
 
 以下是如何逐个构建非基元的对象数组：
 
-```Java
+```java
 // arrays/AssemblingMultidimensionalArrays.java
 // Creating multidimensional arrays
 import java.util.*;
@@ -523,7 +523,7 @@ public class AssemblingMultidimensionalArrays {
 
 **Arrays.deepToString()** 方法同时适用于基元数组和对象数组：
 
-```JAVA
+```java
 // arrays/MultiDimWrapperArray.java
 // (c)2017 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
@@ -571,7 +571,7 @@ Lazy, Brown, Dog, &, friend]]
 
 一般来说，数组和泛型并不能很好的结合。你不能实例化参数化类型的数组：
 
-```Java
+```java
 Peel<Banana>[] peels = new Peel<Banana>[10]; // Illegal
 ```
 
@@ -579,7 +579,7 @@ Peel<Banana>[] peels = new Peel<Banana>[10]; // Illegal
 
 但是，可以参数化数组本身的类型：
 
-```Java
+```java
 // arrays/ParameterizedArrayType.java
 
 class ClassParameter<T> {
@@ -608,13 +608,13 @@ public class ParameterizedArrayType {
 
 你不能创建泛型类型的数组，这种说法并不完全正确。是的，编译器不会让你 *实例化* 一个泛型的数组。但是，它将允许您创建对此类数组的引用。例如：
 
-```Java
+```java
 List<String>[] ls;
 ```
 
 无可争议的，这可以通过编译。尽管不能创建包含泛型的实际数组对象，但是你可以创建一个非泛型的数组并对其进行强制类型转换：
 
-```Java
+```java
 // arrays/ArrayOfGenerics.java
 import java.util.*;
 
@@ -653,7 +653,7 @@ public class ArrayOfGenerics {
 
 一般来说，您会发现泛型在类或方法的边界上是有效的。在内部，擦除常常会使泛型不可使用。所以，就像下面的例子，不能创建泛型类型的数组：
 
-```Java
+```java
 // arrays/ArrayOfGenericType.java
 
 public class ArrayOfGenericType<T> {
@@ -679,7 +679,7 @@ public class ArrayOfGenericType<T> {
 
 通常情况下，当对数组和程序进行实验时，能够很轻易地生成充满测试数据的数组是很有帮助的。 Java 标准库 **Arrays** 类包括一个普通的 **fill()** 方法，该方法将单个值复制到整个数组，或者在对象数组的情况下，将相同的引用复制到整个数组：
 
-```Java
+```java
 // arrays/FillingArrays.java
 // Using Arrays.fill()
 import java.util.*;
@@ -1886,7 +1886,7 @@ a8b: [4.83, 2.89, 2.9, 1.97, 3.01, 0.18]
 
 传递给 **Arrays.setAll()** 的生成器函数可以使用它接收到的数组索引修改现有的数组元素:
 
-```JAVA
+```java
 // arrays/ModifyExisting.java
 
 import java.util.*;
@@ -1943,7 +1943,7 @@ public class ModifyExisting {
 
 流式编程产生优雅的代码。例如，假设我们想要创建一个数值由从零开始填充的长数组：
 
-```JAVA
+```java
 // arrays/CountUpward.java
 
 import java.util.stream.LongStream;
@@ -1970,7 +1970,7 @@ public class CountUpward {
 **流** 实际上可以存储到将近1000万，但是之后就会耗尽堆空间。常规的 **setAll()** 是有效的，但是如果我们能更快地处理如此大量的数字，那就更好了。
 我们可以使用 **setAll()** 初始化更大的数组。如果速度成为一个问题，**Arrays.parallelSetAll()** 将(可能)更快地执行初始化(请记住并行性中描述的问题)。
 
-```JAVA
+```java
 
 // arrays/ParallelSetAll.java
 
@@ -2046,7 +2046,7 @@ public class ParallelSetAll {
 与使用for循环手工执行复制相比，**copyOf()** 和 **copyOfRange()** 复制数组要快得多。这些方法被重载以处理所有类型。
 
 我们从复制 **int** 和 **Integer** 数组开始:
-```JAVA
+```java
 // arrays/ArrayCopying.java
 // Demonstrate Arrays.copy() and Arrays.copyOf()
 
@@ -2146,7 +2146,7 @@ public class ArrayCopying {
 
 数组相等的含义：数组必须有相同数量的元素，并且每个元素必须与另一个数组中的对应元素相等，对每个元素使用 **equals()**(对于原生类型，使用原生类型的包装类的 **equals()** 方法;例如，int的Integer.equals()。
 
-```JAVA
+```java
 // arrays/ComparingArrays.java
 // Using Arrays.equals()
 
@@ -2210,7 +2210,7 @@ a1w == a2w: false
 
 **stream()** 方法很容易从某些类型的数组中生成元素流。
 
-```JAVA
+```java
 // arrays/StreamFromArray.java
 
 import java.util.*;
@@ -2268,7 +2268,7 @@ Java有两种方式提供比较功能。第一种方法是通过实现 **java.la
 
 这里有一个类，它实现了 **Comparable** 接口并演示了可比性，而且使用Java标准库方法 **Arrays.sort()**:
 
-```JAVA
+```java
 // arrays/CompType.java
 // Implementing Comparable in a class
 
@@ -2337,7 +2337,7 @@ After sorting: [[i = 0, j = 25], [i = 21, j = 6], [i = 31, j = 67] ,
 
 集合类(注意复数;我们将在下一章节讨论它) 包含一个方法 **reverseOrder()**，它生成一个来 **Comparator**（比较器）反转自然排序顺序。这可以应用到比较对象：
 
-```JAVA
+```java
 // arrays/Reverse.java
 // The Collections.reverseOrder() Comparator
 
@@ -2375,7 +2375,7 @@ After sorting: [[i = 77, j = 79], [i = 70, j = 7],
 
 您还可以编写自己的比较器。这个比较CompType对象基于它们的j值而不是它们的i值:
 
-```JAVA
+```java
 // arrays/ComparatorTest.java
 // Implementing a Comparator for a class
 
@@ -2418,7 +2418,7 @@ After sorting: [[i = 21, j = 6], [i = 70, j = 7], [i = 41, j = 20] ,
 
 使用内置的排序方法，您可以对实现了 **Comparable** 接口或具有 **Comparator** 的任何对象数组 或 任何原生数组进行排序。这里我们生成一个随机字符串对象数组并对其排序:
 
-```JAVA
+```java
 // arrays/StringSorting.java
 // Sorting an array of Strings
 
@@ -2515,7 +2515,7 @@ public class ParallelSort {
 
 一旦数组被排序，您就可以通过使用 **Arrays.binarySearch()** 来执行对特定项的快速搜索。但是，如果尝试在未排序的数组上使用 **binarySearch()**，结果是不可预测的。下面的示例使用 **Rand.Pint** 类来创建一个填充随机整形值的数组，然后调用 **getAsInt()** (因为 **Rand.Pint** 是一个 **IntSupplier**)来产生搜索值:
 
-```JAVA
+```java
 // arrays/ArraySearching.java
 // Using Arrays.binarySearch()
 
@@ -2557,7 +2557,7 @@ Location of 635 is 2, a[2] is 635
 
 如果使用比较器(原语数组不允许使用比较器进行排序)对对象数组进行排序，那么在执行 **binarySearch()** (使用重载版本的binarySearch())时必须包含相同的比较器。例如，可以修改 **StringSorting.java** 来执行搜索:
 
-```JAVA
+```java
 // arrays/AlphabeticSearch.java
 // Searching with a Comparator
 
@@ -2592,7 +2592,7 @@ Index: 10 gmeinne
 
 没有“prefix()”方法，只有 **parallelPrefix()**。这类似于 **Stream** 类中的 **reduce()** 方法:它对前一个元素和当前元素执行一个操作，并将结果放入当前元素位置:
 
-```JAVA
+```java
 // arrays/ParallelPrefix1.java
 
 import onjava.*;
@@ -2625,7 +2625,7 @@ public class ParallelPrefix1 {
 
 使用字符串可能更清楚:
 
-```JAVA
+```java
 // arrays/ParallelPrefix2.java
 
 import onjava.*;
@@ -2650,7 +2650,7 @@ public class ParallelPrefix2 {
 
 如前所述，使用流进行初始化非常优雅，但是对于大型数组，这种方法可能会耗尽堆空间。使用 **setAll()** 执行初始化更节省内存:
 
-```JAVA
+```java
 // arrays/ParallelPrefix3.java
 // {ExcludeFromTravisCI}
 
@@ -2692,7 +2692,7 @@ Java为固定大小的低级数组提供了合理的支持。这种数组强调�
 
 所有这些问题都表明，在使用Java的最新版本进行编程时，应该“优先选择集合而不是数组”。只有当您证明性能是一个问题(并且切换到一个数组实际上会有很大的不同)时，才应该重构到数组。这是一个相当大胆的声明，但是有些语言根本没有固定大小的低级数组。它们只有可调整大小的集合，而且比C/C++/java风格的数组功能多得多。例如，Python有一个使用基本数组语法的列表类型，但是具有更大的功能—您甚至可以从它继承:
 
-```Python
+```python
 # arrays/PythonLists.py
 
 aList=[1,2,3,4,5]print(type(aList)) #<type 'list'>

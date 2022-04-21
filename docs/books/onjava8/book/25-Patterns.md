@@ -111,7 +111,7 @@ public class SingletonPattern {
 
 模板方法模式的一个重要特性是它是在基类中定义的，并且不能更改。它有时是一个 **private** 方法，但实际上总是 **final**。它调用其他基类方法(您覆盖的那些)来完成它的工作,但是它通常只作为初始化过程的一部分被调用(因此框架使用者不一定能够直接调用它)。
 
-```Java
+```java
 // patterns/TemplateMethod.java
 // Simple demonstration of Template Method
 
@@ -179,7 +179,7 @@ Hello World!
 
 如果我们按照上面的关系图实现，它看起来是这样的:
 
-```Java
+```java
 // patterns/ProxyDemo.java
 // Simple demonstration of the Proxy pattern
 interface ProxyBase {
@@ -241,7 +241,7 @@ Implementation.h()
 
 状态模式向代理对象添加了更多的实现，以及在代理对象的生命周期内从一个实现切换到另一种实现的方法:
 
-```Java
+```java
 // patterns/StateDemo.java // Simple demonstration of the State pattern
 interface StateBase {
     void f();
@@ -365,7 +365,7 @@ Implementation2.h()
 
 桥接模式允许程序员更改实现，状态机利用一个结构来自动地将实现更改到下一个。当前实现表示系统所处的状态，系统在不同状态下的行为不同(因为它使用桥接模式)。基本上，这是一个利用对象的“状态机”。将系统从一种状态移动到另一种状态的代码通常是模板方法模式，如下例所示:
 
-```Java
+```java
 // patterns/state/StateMachineDemo.java
 // The StateMachine pattern and Template method
 // {java patterns.state.StateMachineDemo}

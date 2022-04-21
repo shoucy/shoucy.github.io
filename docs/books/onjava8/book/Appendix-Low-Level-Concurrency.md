@@ -35,7 +35,7 @@ Java 并发的核心机制是 **Thread** 类，在该语言最初版本中， **
 
 我们可以查出当前机器上处理器的数量：
 
-```Java
+```java
 // lowlevel/NumberOfProcessors.java
 
 public class NumberOfProcessors {
