@@ -39,6 +39,12 @@ jobs:
         # if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
+      # 解除内存限制,shiki太吃内存了
+      - name: Increase memory limit
+        run: npm install -g increase-memory-limit
+        run: increase-memory-limit
+
+
       # 运行构建脚本
       - name: Build VuePress site
         run: yarn docs:build

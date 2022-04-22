@@ -68,7 +68,5 @@
 
 [科技爱好者周刊 by 阮一峰](https://github.com/ruanyf/weekly)
 
-[【宋红康】MySQL数据库（mysql安装/基础/高级/优化）](./books/mysql)
-
 [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
 
