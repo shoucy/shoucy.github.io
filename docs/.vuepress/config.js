@@ -21,10 +21,5 @@ module.exports = {
         },
       },
     ],
-    ['@vuepress/plugin-shiki',
-      {
-        theme: 'one-dark-pro'
-      }
-    ]
   ],
 }
