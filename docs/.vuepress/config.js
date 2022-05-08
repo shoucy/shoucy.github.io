@@ -14,6 +14,9 @@ module.exports = {
 
   theme: defaultTheme({
     logo: '/favicon.ico',
+    navbar: [
+      '/navigation/README.md',
+    ],
   }),
 
   plugins: [

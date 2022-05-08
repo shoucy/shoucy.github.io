@@ -465,9 +465,9 @@ $ /opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port
 
 ```shell
 # 方式1
-$ netstat -lnp |grep
+$ netstat -lnp | grep 8100
 # 方式2
-$ ps -ef|grep soffice
+$ ps -ef | grep soffice
 ```
 
 ::: tip
