@@ -30,6 +30,8 @@
 
 [通过sql生成数据库表文档](./sql/skills.md)
 
+[mysql主从同步](./db/mysql/syncronize.md)
+
 
 
 ## 服务器相关笔记
