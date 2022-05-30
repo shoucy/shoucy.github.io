@@ -30,6 +30,8 @@
 
 [通过sql生成数据库表文档](./sql/skills.md)
 
+[mysql安装（linux）](./db/mysql/install.md)
+
 [mysql主从同步](./db/mysql/syncronize.md)
 
 
