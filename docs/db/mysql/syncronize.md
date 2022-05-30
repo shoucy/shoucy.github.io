@@ -73,10 +73,10 @@ mysql> show master status;
 
 ```sql
 mysql> change master to
-    -> master_host='10.189.11.103',
+    -> master_host='xxx.xxx.xxx.xxx',
     -> master_port=3308,
     -> master_user='synchronize',
-    -> master_password='Jingbo@file0530',
+    -> master_password='password',
     -> master_log_file='mysql_bin.000001',
     -> master_log_pos=154;
 Query OK, 0 rows affected, 2 warnings (0.01 sec)
