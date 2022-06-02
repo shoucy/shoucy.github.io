@@ -35,6 +35,16 @@ $ mkdir temp
 $ mkdir /var/temp/nginx -p
 ```
 
+#### rmdir
+
+移除文件夹
+
+```shell
+$ rmdir temp
+```
+
+
+
 #### cp
 
 用于复制文件或文佳佳到指定文件夹
@@ -102,7 +112,21 @@ drwxr-x---  2 mysql   mysql   4096 Mar 22 02:00 mysql-keyring
 ...
 ```
 
+在当前文件夹创建软链接，和目标文件夹名称相同。
 
+```shell
+$ ln -s /disk1/archive
+$ ll
+total 0
+lrwxrwxrwx 1 root root 14 Jun  2 14:29 archive -> /disk1/archive
+
+```
+
+::: warning
+
+软链接就是软链接，它不是文件夹或文件。建立软链接前确保目标处不存在同名文件夹，否则软链接会被建在此文件夹下。如果你想要的软链接是 `/var/lib/mysql ` ,而此时有同名文件夹，生成的软链接路径将会是 `/var/lib/mysql/mysql` 。
+
+:::
 
 
 

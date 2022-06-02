@@ -18,6 +18,12 @@
 $ tar -zxvf jdk-7u80-linux-x64.tar.gz -C /usr/local/
 ```
 
+:::warning
+
+一定需要通过压缩包解压，而不是直接将解压过的文件夹复制过来，否则bin下的文件会没有可执行权限。
+
+:::
+
 ### 配置环境变量
 
 在 `/etc/profile` 进行环境变量配置，我这里使用Xftp工具打开，直接用vscode进行编辑的。
@@ -168,7 +174,13 @@ $ /opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port
 
 如果没有，需要先安装：`yum install libXext.x86_64` （64位） 或 `yum install libXext.i686` （32位）。
 
-将 `libXext.so.6` copy到 `/opt/openoffice4/program/` 目录里面，赋予 `chmod 777 libXext.so.6` 。
+将 `libXext.so.6` copy到 `/opt/openoffice4/program/` 目录里面，并赋予 `chmod 777` 权限 。
+
+```shell
+$ yum install -y libXext.x86_64
+$ cp /usr/lib64/libXext.so.6 /opt/openoffice4/program/
+$ chmod 777 /opt/openoffice4/program/libXext.so.6
+```
 
 :::
 
@@ -177,7 +189,7 @@ $ /opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port
 如果启动时提醒 `no suitable windowing system found, exiting`, 需要：
 
 ```shell
-$ yum groupinstall "X Window System"
+$ yum groupinstall -y "X Window System"
 ```
 
 :::
