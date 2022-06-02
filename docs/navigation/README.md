@@ -16,6 +16,8 @@ sidebar: false
 
 [iconfont](https://www.iconfont.cn/)&emsp;[Font Awesome](http://www.fontawesome.com.cn/faicons/)&emsp;[iconoir](https://iconoir.com/)
 
+[emoji-cheat-sheet（转载）](../reprint/emoji-cheat-sheet.md)
+
 #### 前端
 
 [Vue.js](https://v3.cn.vuejs.org/guide/introduction.html)
@@ -29,6 +31,8 @@ sidebar: false
 #### Java
 
 [OnJava8中文版-技术池](http://www.jishuchi.com/read/onjava8/11809)&emsp;[OnJava8中文版-蛤文档](https://hardocs.com/d/onjava8/)
+
+[OnJava8中文版（转载）](../reprint/onjava8) (该翻译项目因实体书发售已在github闭源，实体书购买地址：**[www.OnJava8.com](http://www.onjava8.com/)**) 
 
 #### js
 

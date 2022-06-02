@@ -1,15 +1,24 @@
 ## 常用命令
 
-#### tar
+### 系统操作
 
-用于解压 `.tar.gz` 结尾的压缩文件。
+#### df
+
+展示磁盘占用情况。可以用来看挂载盘在哪。
 
 ```shell
-# tar -zxvf [压缩包]
-$ tar -zxvf nginx-1.20.2.tar.gz
-# 通过-C 指定解压后文件位置
-$ tar -zxvf apache-tomcat-7.0.99.tar.gz -C /usr/local/
+$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/vda1       20510288 1197764  18247616   7% /
+devtmpfs        32894900       0  32894900   0% /dev
+tmpfs           32904536       0  32904536   0% /dev/shm
+tmpfs           32904536   33244  32871292   1% /run
+tmpfs           32904536       0  32904536   0% /sys/fs/cgroup
+tmpfs            6580908       0   6580908   0% /run/user/0
+/dev/vdc       515928320   73752 489623784   1% /disk1
 ```
+
+最后一行的disk1就是块挂载盘。
 
 
 
@@ -45,6 +54,21 @@ $ cp -r /home/dir1 /opt/dir2
 # mv [文件或文件夹] [新的地址]
 $ mv mysql-5.7.26-linux-glibc2.12-x86_64 /usr/local/mysql
 ```
+
+
+
+#### tar
+
+用于解压 `.tar.gz` 结尾的压缩文件。
+
+```shell
+# tar -zxvf [压缩包]
+$ tar -zxvf nginx-1.20.2.tar.gz
+# 通过-C 指定解压后文件位置
+$ tar -zxvf apache-tomcat-7.0.99.tar.gz -C /usr/local/
+```
+
+
 
 ### 软链接
 
@@ -109,6 +133,12 @@ $ less - nohup.out
 - `G` ：跳转到尾页
 - `b` ：上一页
 - `space` ：下一页
+
+查找：
+
+- `?` ：向上找
+- `/` ：向下找
+- `n` ：寻找下一个，方向取决于之前用的 `?` 还是 `/`
 
 如果不够用可以：
 

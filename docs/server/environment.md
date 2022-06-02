@@ -78,9 +78,31 @@ $ tar -zxvf apache-tomcat-7.0.99.tar.gz -C /usr/local/
 
 ### 配置开机自启
 
+在 `/etc/rc.d/rc.local` 文件最后加上：
 
+```
+export JAVA_HOME=/usr/local/java/jdk1.7.0_80
+/usr/local/apache-tomcat-7.0.99/bin/startup.sh start
+```
 
-完毕！
+说明：
+
+- `/usr/local/java/jdk1.7.0_80` 是jdk安装目录
+- `/usr/local/apache-tomcat-7.0.99` 是tomcat安装的目录
+
+修改rc.local文件为可执行
+
+```shell
+chmod +x  rc.local  
+```
+
+::: tip
+
+重启服务器命令是 `reboot` 。
+
+:::
+
+完毕，撒花！:tada:
 
 
 
@@ -160,6 +182,22 @@ $ yum groupinstall "X Window System"
 
 :::
 
+### 配置开机自启
+
+在 `/etc/rc.d/rc.local` 中添加：
+
+```
+/opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard &
+```
+
+确保或修改rc.local文件为可执行
+
+```shell
+chmod +x rc.local  
+```
+
+
+
 ### 卸载
 
 在program文件夹下执行：
@@ -167,10 +205,6 @@ $ yum groupinstall "X Window System"
 ```shell
 $ rpm -erpm -qa |grep openofficerpm -qa |grep ooobasis
 ```
-
-
-
-
 
 
 
