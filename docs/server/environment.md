@@ -130,10 +130,10 @@ $ tar -zxvf Apache_OpenOffice_4.1.11_Linux_x86-64_install-rpm_zh-CN.tar.gz
 # 进入RPMS目录，其中有一堆rpm和一个叫desktop-integration文件夹
 $ cd ./zh-CN/RPMS/
 # 一口气将RPMS目录下的rpm全安装了
-$ yum install *.rpm
+$ yum install -y *.rpm
 # 再装desktop-integration下的rpm
 $ cd desktop-integration/
-$ yum install openoffice4.1.11-redhat-menus-4.1.11-9808.noarch.rpm
+$ yum install -y openoffice4.1.11-redhat-menus-4.1.11-9808.noarch.rpm
 ```
 
 安装成功后会在/opt下出现一个openoffice4文件。
@@ -208,14 +208,10 @@ $ yum groupinstall -y "X Window System"
 chmod +x rc.local  
 ```
 
-
-
 ### 卸载
 
-在program文件夹下执行：
-
 ```shell
-$ rpm -erpm -qa |grep openofficerpm -qa |grep ooobasis
+$ rpm -e `rpm -qa |grep openoffice` `rpm -qa |grep ooobasis`
 ```
 
 
