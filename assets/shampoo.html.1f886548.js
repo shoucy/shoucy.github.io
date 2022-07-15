@@ -1,0 +1,1 @@
+const o=JSON.parse('{"key":"v-94d8588e","path":"/daily/shampoo.html","title":"choose-shampoo","lang":"zh-CN","frontmatter":{"title":"choose-shampoo","tags":null},"excerpt":"","headers":[],"git":{"updatedTime":1638199054000,"contributors":[{"name":"shoucy","email":"shouchengyu@outlook.com","commits":1}]},"filePathRelative":"daily/shampoo.md"}');export{o as data};

@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as t,a as e,d as c}from"./app.7ac5de94.js";const r={},o=e("h2",{id:"mysql\u7684\u5907\u4EFD",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#mysql\u7684\u5907\u4EFD","aria-hidden":"true"},"#"),c(" Mysql\u7684\u5907\u4EFD")],-1),_=[o];function n(d,l){return s(),t("div",null,_)}var h=a(r,[["render",n],["__file","backups.html.vue"]]);export{h as default};
