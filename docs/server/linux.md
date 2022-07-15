@@ -7,18 +7,22 @@
 展示磁盘占用情况。可以用来看挂载盘在哪。
 
 ```shell
-$ df
-Filesystem     1K-blocks    Used Available Use% Mounted on
-/dev/vda1       20510288 1197764  18247616   7% /
-devtmpfs        32894900       0  32894900   0% /dev
-tmpfs           32904536       0  32904536   0% /dev/shm
-tmpfs           32904536   33244  32871292   1% /run
-tmpfs           32904536       0  32904536   0% /sys/fs/cgroup
-tmpfs            6580908       0   6580908   0% /run/user/0
-/dev/vdc       515928320   73752 489623784   1% /disk1
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        20G  3.8G   15G  20% /
+devtmpfs         32G     0   32G   0% /dev
+tmpfs            32G     0   32G   0% /dev/shm
+tmpfs            32G   17M   32G   1% /run
+tmpfs            32G     0   32G   0% /sys/fs/cgroup
+/dev/vdc        493G  934M  467G   1% /disk1
+tmpfs           6.3G     0  6.3G   0% /run/user/0
 ```
 
-最后一行的disk1就是块挂载盘。
+最后二行的disk1就是块挂载盘。
+
+命令后可跟上文件名，则只显示此文件所在磁盘的信息。
+
+- `-h`  、`--human-readable` ：以K，M，G为单位，提高信息的可读性。
 
 #### du
 
@@ -89,6 +93,28 @@ $ tar -zxvf apache-tomcat-7.0.99.tar.gz -C /usr/local/
 ```
 
 
+
+### 文件统计
+
+查看文件夹下的文件个数(当前目录的文件数)包含子目录
+
+```shell
+$ ls -l |grep "^-"|wc -l
+# or
+$ find ./company -type f | wc -l
+```
+
+查看某文件夹下**文件**的个数，包括子文件夹里的。
+
+```shell
+$ ls -lR|grep "^-"|wc -l
+```
+
+查看某文件夹下**文件夹**的个数，包括子文件夹里的。
+
+```shell
+$ ls -lR|grep "^d"|wc -l
+```
 
 ### 软链接
 
@@ -178,6 +204,16 @@ $ less - nohup.out
 
 - `h` ：查看帮助文档
 - 百度一下:dog:(国际狗头)
+
+
+
+## 人员管理
+
+
+
+
+
+
 
 
 
