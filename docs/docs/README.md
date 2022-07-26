@@ -1,12 +1,8 @@
-> You believe but what you see
->
-> You receive but what you give
+# 笔记
 
 ## 计算机通识
 
 [计算机基础](./coding/base.md)
-
-
 
 ## Java笔记
 
@@ -16,13 +12,9 @@
 
 [POI](./java/POI.md)
 
-
-
 ## Python笔记
 
 [logging 笔记](./python/logging.md)
-
-
 
 ## Mysql笔记
 
@@ -34,13 +26,11 @@
 
 [mysql主从同步](./db/mysql/syncronize.md)
 
-
-
 ## 服务器相关笔记
 
 [linux 笔记](./server/linux.md)
 
-[常见环境安装](./server/environment.md)
+[常见环境安装](./server/software/README.md)
 
 [docker 笔记](./server/docker.md)
 
@@ -48,16 +38,10 @@
 
 [服务器端安装chrome](./server/chrome.md)
 
-
-
 ## 测试
 
 [Jemeter](./tests/jmeter)
 
-
-
 ## 翻译
 
 [68 Bits of Unsolicited Advice](./translate/68-bits-of-unsolicited-advice)
-
-
