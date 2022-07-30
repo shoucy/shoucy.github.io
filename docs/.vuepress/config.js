@@ -38,17 +38,59 @@ module.exports = {
     ],
     navbar:[
       {
+        text: "首页",
+        link: "/",
+        icon: "fa-fort-awesome"
+      },
+      {
+        text: "标签",
+        link: "/tags/",
+        icon: "fa-tag"
+      },
+      {
+        text: "链接",
+        link: "/links/",
+        icon: "fa-satellite-dish"
+      },
+      {
         text: '笔记',
-        link: '/docs/README.md'
+        link: '/docs/README.md',
+        icon: 'ri-book-read-line'
       },
       {
         text: '书签',
-        link: '/docs/navigation/README.md'
+        link: '/docs/navigation/README.md',
+        icon: 'md-bookmarkborder'
       },
     ],
     hitokoto: true,
     themePlugins: {
       search: false
+    },
+    pages: {
+      // 标签页配置
+      tags: {
+        // 可选：标签页副标题
+        subtitle: '吼哇朋友们，这是标签页',
+
+        // 可选：标签页封面图路径和蒙版
+        bgImage: {
+          path: '/img/pages/tags.jpg',
+          mask: 'rgba(211, 136, 37, .5)'
+        }
+      },
+
+      // 链接页配置
+      links: {
+        // 可选：链接页副标题
+        subtitle: '吼哇朋友们，这是链接页',
+
+        // 可选：链接页封面图路径和蒙版
+        bgImage: {
+          path: '/img/pages/links.jpg',
+          mask: 'rgba(64, 118, 190, 0.5)'
+        }
+      }
     }
   }),
 
