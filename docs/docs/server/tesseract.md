@@ -1,18 +1,12 @@
-
-
 ## 参考资料
 
 tesseract-ocr github：https://github.com/tesseract-ocr/tesseract
 
 至今（2021.11.10），最新的（基于 LSTM 的）稳定版本是**[4.1.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.1.1)**，发布于 2019 年 12 月 26 日。
 
-
-
 leptonica官方网站：http://www.leptonica.org/
 
 目前最新版本是1.81.1
-
-
 
 ## 安装依赖
 
@@ -23,24 +17,17 @@ $ yum -y groupinstall "Development Tools"
 yum install -y libtool  libpng-devel libjpeg-devel libtiff-devel
 
 $ yum install -y wget
-
 ```
-
-
 
 ```shell
 yum install libjpeg-devel libpng-devel libtiff-devel zlib-devel
 ```
-
-
 
 ## 安装leptonica
 
 ```shell
 $ wget http://www.leptonica.org/source/leptonica-1.81.1.tar.gz
 ```
-
-
 
 注意：若没有 `wget` 工具，先通过 `yum` 安装：
 
@@ -58,10 +45,7 @@ $ tar -zxvf leptonica-1.81.1.tar.gz
 
 ```shell
 $ cd leptonica-1.81.1
-
 ```
-
-
 
 ## 安装tesseract-ocr
 
@@ -77,8 +61,6 @@ $ wget https://codeload.github.com/tesseract-ocr/tesseract/tar.gz/4.1.1 -O tesse
 $ tar -xzvf tesseract-ocr4.1.1
 $ cd tesseract-4.1.1/
 ```
-
-
 
 ### 可能会遇到错误
 
