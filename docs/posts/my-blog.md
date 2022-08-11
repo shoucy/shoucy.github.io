@@ -1,20 +1,12 @@
 ---
-
 layout: Post
-
 title: 关于博客的碎碎念
-
 subtitle: 菜鸡搭建博客时遇到的各种琐事
-
 headerImage: /img/in-post/my-blog.jpg
-
 useHeaderImage: true
-
 date: 2022-07-31
-
 tags: 
   - 碎碎念
-
 ---
 
 搭建博客真是一个坎坷又有趣的事情，经历了很多零零碎碎的事，变成了现在这个样子。当然，最优解永远都是不存在的，我还能一直捯饬下去。
