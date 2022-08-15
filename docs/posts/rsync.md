@@ -305,7 +305,7 @@ chmod 600 /etc/rsyncd/rsyncd.secrets
 
 配置文件上增加鉴权信息：
 
-```properties
+```properties{4,5,23,24}
 # uid和gid依业务实际情况而定
 uid = root
 gid = root
