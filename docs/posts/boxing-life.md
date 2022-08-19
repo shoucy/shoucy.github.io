@@ -12,11 +12,11 @@
 
 能站到淄博还是挺激动的，因为那时喜欢看朱一旦的视频，他是淄博人，还唱了首歌叫做《淄加哥》，mv中手戴劳力士，每个手指都戴着金戒指，最后一句“资本家的城市，枯燥且朴实无华”。我一直以为这里会是纸醉金迷的地方...或许纸醉金迷只在夜晚吧（强行解释）。
 
-![淄博车站](boxing-life.assets/zibo-station.jpg)
+![淄博车站](./boxing-life.assets/zibo-station.jpg)
 
 淄博火车站门口广场比较小，车又比较多，只好在侧边拍。
 
-![淄博车站](boxing-life.assets/restaurant.jpg)
+![淄博车站](./boxing-life.assets/restaurant.jpg)
 
 我看到了兵马俑:joy:。
 
