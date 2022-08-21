@@ -26,6 +26,10 @@
 
 [mysql主从同步](./db/mysql/syncronize.md)
 
+## Redis
+
+[redis](./db/redis/README.md)
+
 ## 服务器相关笔记
 
 [linux 笔记](./server/linux.md)
