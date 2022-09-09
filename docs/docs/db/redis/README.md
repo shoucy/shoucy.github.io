@@ -48,9 +48,19 @@ redis-server
 
 退出使用 `Ctrl-C` 。
 
-然后修改redis.conf文件中的一些配置：
+::: tip
+
+redis没有官方的windows版本，如果要使用windows版本，可以下载第三方打包的版本：
+
+[https://github.com/tporadowski/redis/releases](https://github.com/tporadowski/redis/releases)(相对较新)
+
+[https://github.com/microsoftarchive/redis/releases](https://github.com/microsoftarchive/redis/releases)
+
+:::
 
 ## 配置
+
+可以修改redis.conf文件中的一些配置：
 
 ```properties
 # 允许访问的地址，默认是127.0.0.1，会导致只能在本地访问。修改为0.0.0.0则可以在任意IP访问，生产环境不要设置为0.0.0.0
@@ -168,5 +178,3 @@ GitHub上的大神编写了Redis的图形化桌面客户端，地址：[https://
 不过该仓库提供的是RedisDesktopManager的源码，并未提供windows安装包。
 
 这个仓库可以找到安装包：[https://github.com/lework/RedisDesktopManager-Windows/releases](https://github.com/lework/RedisDesktopManager-Windows/releases)
-
-
