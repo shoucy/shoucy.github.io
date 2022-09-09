@@ -35,7 +35,7 @@ winsw为 .NET Framework 2.0、4.0 和 4.6.1提供了对应的二进制文件。
 3. 运行`myapp.exe install <OPTIONS>`以安装服务包装器。
 4. 运行`myapp.exe start`以启动服务。
 
-可以使用这些进程的退出代码来确定操作是否成功，不是0就是失败。点这里看详情：[这里]([(CIMWin32 WMI 提供程序) 创建Win32_Service类的方法 - Win32 apps | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/cimwin32prov/create-method-in-class-win32-service#return-value))。
+可以使用这些进程的退出代码来确定操作是否成功，不是0就是失败。点这里看详情：[这里](https://docs.microsoft.com/zh-cn/windows/win32/cimwin32prov/create-method-in-class-win32-service#return-value)。
 
 ## xml配置
 
@@ -69,9 +69,9 @@ winsw为 .NET Framework 2.0、4.0 和 4.6.1提供了对应的二进制文件。
 
 `arguments`：命令执行参数，比如 包路径，类路径等。
 
-详情文档在[这里]([winsw/xmlConfigFile.md at master · winsw/winsw · GitHub](https://github.com/winsw/winsw/blob/master/doc/xmlConfigFile.md))。
+详情文档在[这里](https://github.com/winsw/winsw/blob/master/doc/xmlConfigFile.md)。
 
-### 其它命令
+## 其它命令
 
 - `install`将服务安装到 Windows 服务控制器。此命令需要[安装指南](https://github.com/winsw/winsw/blob/master/doc/installation.md)中描述的一些初步步骤。
 - `uninstall`卸载服务。与上述相反的操作。
@@ -84,4 +84,3 @@ winsw为 .NET Framework 2.0、4.0 和 4.6.1提供了对应的二进制文件。
     - `NonExistent`表示当前未安装该服务
     - `Started`表示服务当前正在运行
     - `Stopped`表示该服务已安装但当前未运行。
-
