@@ -30,10 +30,11 @@ winsw为 .NET Framework 2.0、4.0 和 4.6.1提供了对应的二进制文件。
 
 为了设置 WinSW，您通常需要执行以下步骤：
 
-1. 编写*myapp.xml* （有关详细信息，请参阅[XML 配置文件规范）](https://github.com/winsw/winsw/blob/master/doc/xmlConfigFile.md)
-2. 将这两个文件**并排放置**，因为这就是 WinSW 发现其配置的方式。
-3. 运行`myapp.exe install <OPTIONS>`以安装服务包装器。
-4. 运行`myapp.exe start`以启动服务。
+1. 从发行版中获取*WinSW.exe*，并将其重命名为您的喜好（例如*myapp.exe*）
+2. 编写*myapp.xml* （有关详细信息，请参阅[XML 配置文件规范）](https://github.com/winsw/winsw/blob/master/doc/xmlConfigFile.md)
+3. 将这两个文件并排放置，因为这就是 WinSW 发现其配置的方式。
+4. 运行`myapp.exe install <OPTIONS>`以安装服务包装器。
+5. 运行`myapp.exe start`以启动服务。
 
 可以使用这些进程的退出代码来确定操作是否成功，不是0就是失败。点这里看详情：[这里](https://docs.microsoft.com/zh-cn/windows/win32/cimwin32prov/create-method-in-class-win32-service#return-value)。
 
