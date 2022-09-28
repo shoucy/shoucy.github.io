@@ -85,7 +85,7 @@ rsync远程具备两种实现方式：通过ssh协议、通过守护进程。
 
 在不同的操作系统版本下，这个配置文件不一定会存在。可以通过 `rpm -ql rsync` 或 `rpm -qc rsync` 查找。
 
-如果安装时有配置文件，会看到里面是一个全部配置都被注释了的官方示例：
+如果安装后有生成配置文件（不一定会有），会看到里面是一个全部配置都被注释了的官方示例：
 
 ```properties
 # /etc/rsyncd: configuration file for rsync daemon mode
