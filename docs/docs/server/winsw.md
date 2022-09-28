@@ -66,7 +66,7 @@ winsw为 .NET Framework 2.0、4.0 和 4.6.1提供了对应的二进制文件。
 
 `description`：用来给人看的长描述。选择服务后，这将显示在 Windows 服务管理器中。
 
-`executable`：执行的命令，比如启动springboot应用的命令java。
+`executable`：执行的命令，比如启动springboot应用的命令java。（只可以使用可执行程序的绝对路径或 `PATH` ，不可以使用相对路径。java命令可以直接使用是因为它已经被配置为一个 `PATH` 。）
 
 `arguments`：命令执行参数，比如 包路径，类路径等。
 

@@ -56,11 +56,11 @@ redis没有官方的windows版本，如果要使用windows版本，可以下载�
 
 [https://github.com/microsoftarchive/redis/releases](https://github.com/microsoftarchive/redis/releases)
 
-不想观赏小黑窗，可以把redis配置为windows服务自启：
+如果不想观赏小黑窗，可以把redis配置为windows服务自启，进入redis文件夹：
 
 ```shell
 # 注册服务
-redis-server.exe --service-install redis.windows.conf
+redis-server --service-install redis.windows.conf
 # 移除服务
 redis-server --service-uninstall
 ```
