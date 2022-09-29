@@ -16,6 +16,9 @@ module.exports = {
       avatar: "/img/avatar.png",
       // 必须：个人简介，将在首页显示
       description: "夢は人生です",
+      sns: {
+        email: "shouchengyu@outlook.com",
+      }
     },
     // header images on home page
     homeHeaderImages: [
