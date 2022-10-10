@@ -18,13 +18,15 @@
 
 ## Mysql笔记
 
-[sql注入解决实践](./sql/sql-inject.md)
+[sql注入解决实践](./db/mysql/sql-inject.md)
 
-[通过sql生成数据库表文档](./sql/skills.md)
+[通过sql生成数据库表文档](./db/mysql/skills.md)
 
 [mysql安装（linux）](./db/mysql/install.md)
 
 [mysql主从同步](./db/mysql/syncronize.md)
+
+[mysql数据备份](./db/mysql/backup.md)
 
 ## Redis
 
