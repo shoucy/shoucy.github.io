@@ -49,11 +49,7 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 11. Never use a credit card for credit. The only kind of credit, or debt, that is acceptable is debt to acquire something whose exchange value is extremely likely to increase, like in a home. The exchange value of most things diminishes or vanishes the moment you purchase them. Don’t be in debt to losers.
     
-    *永远不要使用信用卡信贷。唯一可以接受的信贷或债务，是那些用来获取极有可能增值的事物，比如一栋房子。大部分事物在你买下它那一刻就贬值了。别为那些废物而负债。*
-    
-    ::: tip
-    我不确定“like in a home”是不是指房子，救命...
-    :::
+    *永远不要使用信用卡信贷。唯一可以接受的信贷或债务，是那些用来获取极有可能增值的事物，比如一栋房子。大部分事物在你买下它那一刻就贬值了。别为那些废物而负债。（我不确定“like in a home”是不是指房子，救命...）*
 
 12. Pros are just amateurs who know how to gracefully recover from their mistakes.
     
@@ -63,31 +59,62 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
     
     *非比寻常的观点需要非比寻常的证据以使人们信服。*
 
-• Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you.
+14. Don’t be the smartest person in the room. Hangout with, and learn from, people smarter than yourself. Even better, find smart people who will disagree with you.
+    
+    *不要成为屋子里最聪明的那个人。去和那些比你聪明的人呆在一起，并向他们学习。甚至最好能够找到那些和你意见不同的聪明人。*
 
-• Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth.
+15. Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth.
+    
+    *对话3次原则。想要得到真相，深入去询问某人刚说过的话。一遍再一遍。得到的第三次回答就很接近真相了。*
 
-• Don’t be the best. Be the only.
+16. Don’t be the best. Be the only.
+    
+    *别成为最优质的，而是最稀缺的。*
 
-• Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead.
+17. Everyone is shy. Other people are waiting for you to introduce yourself to them, they are waiting for you to send them an email, they are waiting for you to ask them on a date. Go ahead.
+    
+    *大家都很羞涩的。别人在等着你介绍自己，等你发邮件给他们，等你和他们约会。勇敢地上吧。*
 
-• Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works.
+18. Don’t take it personally when someone turns you down. Assume they are like you: busy, occupied, distracted. Try again later. It’s amazing how often a second try works.
+    
+    *不要太在意别人拒绝了你。假设对方像你一样忙碌，被事情缠绕，没有精力。过段时间再试试。第二次尝试的结果往往令人惊喜。（不会消息了吗hhh）*
 
-• The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing.
+19. The purpose of a habit is to remove that action from self-negotiation. You no longer expend energy deciding whether to do it. You just do it. Good habits can range from telling the truth, to flossing.
+    
+    *习惯的作用在于降低决策成本。你不需要再花费精力思考要不要做某件事。做就行了。好习惯包括讲真话，用牙线。*
 
-• Promptness is a sign of respect.
+20. Promptness is a sign of respect.
+    
+    *迅速回应是尊重的一种标志。*
 
-• When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
+21. When you are young spend at least 6 months to one year living as poor as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent, to experience what your “worst” lifestyle might be. That way any time you have to risk something in the future you won’t be afraid of the worst case scenario.
+    
+    *在年轻时花6个月到1年时间过你能接受最穷的生活，只使用最少的物品，住在迷你房子或帐篷里吃豆子或大米，去体验对你来说最“糟糕”的生活。这样，当你在未来被置于风险中时，你不会为最坏的可能担惊受怕。*
 
-• Trust me: There is no “them”.
+22. Trust me: There is no “them”.
+    
+    *相信我：这世上没有“他们”。（啥意思啊...）*
 
-• The more you are interested in others, the more interesting they find you. To be interesting, be interested.
+23. The more you are interested in others, the more interesting they find you. To be interesting, be interested.
+    
+    *你对别人越感兴趣，别人对你越感兴趣。想要自己变得有趣，先对外界感兴趣。*
 
-• Optimize your generosity. No one on their deathbed has ever regretted giving too much away.
+24. Optimize your generosity. No one on their deathbed has ever regretted giving too much away.
+    
+    慷慨一些。没人会在死前懊悔自己给予他人太多。
 
-• To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them.
+25. To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them.
+    
+    想把什么事情做好，就去做它。想把什么事情做的更好，就再去做它，一遍遍重复。把事情做好的秘诀在于反复去做。
 
-• The Golden Rule will never fail you. It is the foundation of all other virtues.
+26. The Golden Rule will never fail you. It is the foundation of all other virtues.
+    
+    黄金法则永远不会让你失望，它是其它美德的基础。
+    
+    ::: tip
+    Golden Rule的意思可能是：己所不欲，勿施于人。
+    
+    :::
 
 • If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it.
 
