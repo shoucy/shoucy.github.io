@@ -101,22 +101,24 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 24. Optimize your generosity. No one on their deathbed has ever regretted giving too much away.
     
-    慷慨一些。没人会在死前懊悔自己给予他人太多。
+    *慷慨一些。没人会在死前懊悔自己给予他人太多。*
 
 25. To make something good, just do it. To make something great, just re-do it, re-do it, re-do it. The secret to making fine things is in remaking them.
     
-    想把什么事情做好，就去做它。想把什么事情做的更好，就再去做它，一遍遍重复。把事情做好的秘诀在于反复去做。
+    *想把什么事情做好，就去做它。想把什么事情做的更好，就再去做它，一遍遍重复。把事情做好的秘诀在于反复去做。*
 
 26. The Golden Rule will never fail you. It is the foundation of all other virtues.
     
-    黄金法则永远不会让你失望，它是其它美德的基础。
+    *黄金法则永远不会让你失望，它是其它美德的基础。*
     
     ::: tip
     Golden Rule的意思可能是：己所不欲，勿施于人。
     
     :::
 
-• If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it.
+27. If you are looking for something in your house, and you finally find it, when you’re done with it, don’t put it back where you found it. Put it back where you first looked for it.
+    
+    *如果你在家寻找什么东西，最后终于找到了，当你使用完它时，不要把它放回你发现它的地方。把它放在你最开始寻找的地方。*
 
 • Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth.
 
