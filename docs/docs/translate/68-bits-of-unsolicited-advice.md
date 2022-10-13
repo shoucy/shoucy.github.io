@@ -120,31 +120,57 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
     
     *如果你在家寻找什么东西，最后终于找到了，当你使用完它时，不要把它放回你发现它的地方。把它放在你最开始寻找的地方。*
 
-• Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth.
+28. Saving money and investing money are both good habits. Small amounts of money invested regularly for many decades without deliberation is one path to wealth.
+    
+    *存钱与投资是好习惯。年复一年地无脑进行小额投资是一条致富的路。*
 
-• To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is.
+29. To make mistakes is human. To own your mistakes is divine. Nothing elevates a person higher than quickly admitting and taking personal responsibility for the mistakes you make and then fixing them fairly. If you mess up, fess up. It’s astounding how powerful this ownership is.
+    
+    *人总是会犯错，接纳自己的错误是可贵的。快速承认并承担自己的责任然后尽力弥补，会使你成为更好的人。如果你搞砸了，就去承担。这会让你看起来非常强大。*
 
-• Never get involved in a land war in Asia.
+30. Never get involved in a land war in Asia.
+    
+    *永远不要卷入亚洲陆地战争。（land war是陆地战争还是土地之争呀？救救菜鸡）*
 
-• You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further.
+31. You can obsess about serving your customers/audience/clients, or you can obsess about beating the competition. Both work, but of the two, obsessing about your customers will take you further.
+    
+    *你可以专注服务你的顾客/听众/用户，你也可以专注于打败竞争对手。它们可行的，但两者相比较而言，把注意力放在顾客身上更有未来。*
 
-• Show up. Keep showing up. Somebody successful said: 99% of success is just showing up.
+32. Show up. Keep showing up. Somebody successful said: 99% of success is just showing up.
+    
+    *在场，保持在场。某个成功的人说过：99%的成功仅仅是因为在场。*
 
-• Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement.
+33. Separate the processes of creation from improving. You can’t write and edit, or sculpt and polish, or make and analyze at the same time. If you do, the editor stops the creator. While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator mind must be unleashed from judgement.
+    
+    *将创造与改进剥离。你不能同时写作并编辑，雕刻并打磨，制造并分析。如果你这么做，完善心会打断创意力。当你发明时，不要想着现有的东西。当你雕刻时，不要同时打磨。当你写初稿时，不要反思。在一件事开始时，不要评判，而是最大程度释放创意。*
 
-• If you are not falling down occasionally, you are just coasting.
+34. If you are not falling down occasionally, you are just coasting.
+    
+    *如果你从来没有失利过，那你肯定是在划水。（哈哈哈，coasting是划水吧，文化共通耶）*
 
-• Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom.
+35. Perhaps the most counter-intuitive truth of the universe is that the more you give to others, the more you’ll get. Understanding this is the beginning of wisdom.
+    
+    *或许宇宙中最反直觉的事情是你给予他人的越多，你将会得到的越多。明白了这个就是智慧的起点。*
 
-• Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat.
+36. Friends are better than money. Almost anything money can do, friends can do better. In so many ways a friend with a boat is better than owning a boat.
+    
+    *朋友比钱好使。很多时候钱可以解决的问题，朋友可以做的更好。很多时候拥有一个有船的朋友好过拥一艘船。*
 
-• This is true: It’s hard to cheat an honest man.
+37. This is true: It’s hard to cheat an honest man.
+    
+    *一条真理：诚实的人很难被欺骗。*
 
-• When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it.
+38. When an object is lost, 95% of the time it is hiding within arm’s reach of where it was last seen. Search in all possible locations in that radius and you’ll find it.
+    
+    *当你找不到什么东西时，95%的情况是它就在你上次看到位置的一臂范围之内。仔细搜寻那个半径范围，你就能找到它。*
 
-• You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on.
+39. You are what you do. Not what you say, not what you believe, not how you vote, but what you spend your time on.
+    
+    *你的所作所为成就了你。不是你所说过的，不是你所相信的，不是你所支持的，而是你把时间花在了什么地方。*
 
-• If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it.
+40. If you lose or forget to bring a cable, adapter or charger, check with your hotel. Most hotels now have a drawer full of cables, adapters and chargers others have left behind, and probably have the one you are missing. You can often claim it after borrowing it.
+    
+    *如果你丢了或者落下了数据线、适配器或者充电器，可以去问问你的酒店。大部分酒店都有满满一抽屉的别人拉下的电源线、适配器、充电器，也许里面就有你丢的。你通常可以借走后把它据为己有。*
 
 • Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.
 
