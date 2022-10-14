@@ -65,7 +65,7 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 15. Rule of 3 in conversation. To get to the real reason, ask a person to go deeper than what they just said. Then again, and once more. The third time’s answer is close to the truth.
     
-    *对话3次原则。想要得到真相，深入去询问某人刚说过的话。一遍再一遍。得到的第三次回答就很接近真相了。*
+    *交谈的”3次原则“。想要得到真相，深入去询问某人刚说过的话。一遍再一遍。得到的第三次回答就很接近真相了。*
 
 16. Don’t be the best. Be the only.
     
@@ -206,27 +206,43 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 49. On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back.
     
-    在旅行时把最偏远的地方当作第一站，先越过城市。你将会最大程度感受到远方异域的冲击，在返回的路上，你可以再享受城市所带来的熟悉的舒适感。
+    *在旅行时把最偏远的地方当作第一站，先越过城市。你将会最大程度感受到远方异域的冲击，在返回的路上，你可以再享受城市所带来的熟悉的舒适感。*
 
 50. When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter.
     
-    当你被邀请在未来参与某事时，先问自己：如果明天这事明天就要开始，你还会答应吗？大部分邀请是无法通过这种“即刻性过滤。”
+    *当你被邀请在未来参与某事时，先问自己：如果明天这事明天就要开始，你还会答应吗？大部分邀请是无法通过这种“即刻性过滤。”*
 
-• Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they *will* read it.
+51. Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they *will* read it.
+    
+    *不要在邮件里对他人评头论足，如果你并不想当面对他讲，因为最后他们总会读到你写的。*
 
-• If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss.
+52. If you desperately need a job, you are just another problem for a boss; if you can solve many of the problems the boss has right now, you are hired. To be hired, think like your boss.
+    
+    *如果你很迫切需要一份工作，你不过是老板的另一个问题。如果你能解决老板面临的很多问题，那就会被聘用。想要被聘用，站在老板的立场思考。*
 
-• Art is in what you leave out.
+53. Art is in what you leave out.
+    
+    *艺术在你所忽视的地方。*
 
-• Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will.
+54. Acquiring things will rarely bring you deep satisfaction. But acquiring experiences will.
+    
+    *拥有物品很少会带给你满足感，但拥有体验可以。*
 
-• Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer.
+55. Rule of 7 in research. You can find out anything if you are willing to go seven levels. If the first source you ask doesn’t know, ask them who you should ask next, and so on down the line. If you are willing to go to the 7th source, you’ll almost always get your answer.
+    
+    *”7次调研“原则。如果你遵循”7次原则“，你总会获得答案。如果你问的第一个人不知道，问清楚还可以问谁，然后接着这么做。如果你愿意重复7次，你几乎总能得到想要的答案。*
 
-• How to apologize: Quickly, specifically, sincerely.
+56. How to apologize: Quickly, specifically, sincerely.
+    
+    *如何道歉：快速，具体，真诚。*
 
-• Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise.
+57. Don’t ever respond to a solicitation or a proposal on the phone. The urgency is a disguise.
+    
+    *不要在电话中答应对方的请求或提议。着急都是假的。*
 
-• When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict.
+58. When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict.
+    
+    当一个人在你面前表现得令人厌恶，粗鲁，可憎，刻薄时，设想他有病。这将使你更容易对对方产生同情，从而缓解冲突。
 
 • Eliminating clutter makes room for your true treasures.
 
