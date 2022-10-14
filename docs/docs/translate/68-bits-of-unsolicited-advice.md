@@ -172,25 +172,45 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
     
     *如果你丢了或者落下了数据线、适配器或者充电器，可以去问问你的酒店。大部分酒店都有满满一抽屉的别人拉下的电源线、适配器、充电器，也许里面就有你丢的。你通常可以借走后把它据为己有。*
 
-• Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.
+41. Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.
+    
+    *仇恨是一种诅咒，却对被仇恨者没什么影像。他只毒害仇恨者。把怨恨当毒物一样丢掉吧。*
 
-• There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with.
+42. There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with.
+    
+    *没有最好，只有很更好。天赋有高有低，但提升自己这件事没有上限。*
 
-• Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete.
+43. Be prepared: When you are 90% done any large project (a house, a film, an event, an app) the rest of the myriad details will take a second 90% to complete.
+    
+    *准备好：当你将一个大项目（一个房子、一部电影、一次大型活动、一个app）完成90%的时候，处理剩余的大量细节将会占用相同的时间。*
 
-• When you die you take absolutely nothing with you except your reputation.
+44. When you die you take absolutely nothing with you except your reputation.
+    
+    *当你挂了的时候，除了名声掉你什么也带不走。*
 
-• Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving.
+45. Before you are old, attend as many funerals as you can bear, and listen. Nobody talks about the departed’s achievements. The only thing people will remember is what kind of person you were while you were achieving.
+    
+    *趁年轻，尽量多参加葬礼，去倾听。没人会谈论死者的成就。人们唯一记住的时当你获得成就时，你是个什么样的人。（相对于你有什么，人们只在意你给了他什么，所以有钱就要做慈善？）*
 
-• For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life.
+46. For every dollar you spend purchasing something substantial, expect to pay a dollar in repairs, maintenance, or disposal by the end of its life.
+    
+    *你在购买实体商品时每花费一块钱，将来都得花费相同的钱来维修，保养，或在报废后处理它。*
 
-•Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows.
+47. Anything real begins with the fiction of what could be. Imagination is therefore the most potent force in the universe, and a skill you can get better at. It’s the one skill in life that benefits from ignoring what everyone else knows.
+    
+    *任何真实都源自于虚构。想象力是宇宙中最强大的力量，也是你可以加以锻炼的能力。这是人生中的一种技能，让你通过忽略已有知识而受益。（翻译的怪怪的...）*
 
-• When crisis and disaster strike, don’t waste them. No problems, no progress.
+48. When crisis and disaster strike, don’t waste them. No problems, no progress.
+    
+    *当危机和灾祸到来时，别浪费这次机会。没有问题就没有成长。*
 
-• On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back.
+49. On vacation go to the most remote place on your itinerary first, bypassing the cities. You’ll maximize the shock of otherness in the remote, and then later you’ll welcome the familiar comforts of a city on the way back.
+    
+    在旅行时把最偏远的地方当作第一站，先越过城市。你将会最大程度感受到远方异域的冲击，在返回的路上，你可以再享受城市所带来的熟悉的舒适感。
 
-• When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter.
+50. When you get an invitation to do something in the future, ask yourself: would you accept this if it was scheduled for tomorrow? Not too many promises will pass that immediacy filter.
+    
+    当你被邀请在未来参与某事时，先问自己：如果明天这事明天就要开始，你还会答应吗？大部分邀请是无法通过这种“即刻性过滤。”
 
 • Don’t say anything about someone in email you would not be comfortable saying to them directly, because eventually they *will* read it.
 
