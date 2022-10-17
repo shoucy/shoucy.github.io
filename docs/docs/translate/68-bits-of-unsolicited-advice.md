@@ -242,19 +242,31 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 58. When someone is nasty, rude, hateful, or mean with you, pretend they have a disease. That makes it easier to have empathy toward them which can soften the conflict.
     
-    当一个人在你面前表现得令人厌恶，粗鲁，可憎，刻薄时，设想他有病。这将使你更容易对对方产生同情，从而缓解冲突。
+    *当一个人在你面前表现得令人厌恶，粗鲁，可憎，刻薄时，设想他有病。这将使你更容易对对方产生同情，从而缓解冲突。*
 
-• Eliminating clutter makes room for your true treasures.
+59. Eliminating clutter makes room for your true treasures.
+    
+    *清理垃圾，为真正重要的事物留出空间。*
 
-• You really don’t want to be famous. Read the biography of any famous person.
+60. You really don’t want to be famous. Read the biography of any famous person.
+    
+    你不会想出名的。不信可以随便找本名人传记读一读。
 
-• Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time.
+61. Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time.
+    
+    经验被高估了。招聘时，去招有资质的，再去培养技能。很多令人惊奇或伟大的作品出自第一次做的人。
 
-• A vacation + a disaster = an adventure.
+62. A vacation + a disaster = an adventure.
+    
+    假期 + 灾难 = 冒险。
 
-• Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford.
+63. Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford.
+    
+    *买工具的技巧：开始时买你能找到的最便宜的工具。升级那些你用起来频率高的。如果一些工具是用来工作的，买你能接受的最好的。（wind up怎么翻译？）*
 
-• Learn how to take a 20-minute power nap without embarrassment.
+64. Learn how to take a 20-minute power nap without embarrassment.
+    
+    *学会不尴尬地打盹20分钟。*
 
 • Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
 
