@@ -250,15 +250,15 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 60. You really don’t want to be famous. Read the biography of any famous person.
     
-    你不会想出名的。不信可以随便找本名人传记读一读。
+    *你不会想出名的。不信可以随便找本名人传记读一读。*
 
 61. Experience is overrated. When hiring, hire for aptitude, train for skills. Most really amazing or great things are done by people doing them for the first time.
     
-    经验被高估了。招聘时，去招有资质的，再去培养技能。很多令人惊奇或伟大的作品出自第一次做的人。
+    *经验被高估了。招聘时，去招有资质的，再去培养技能。很多令人惊奇或伟大的作品出自第一次做的人。*
 
 62. A vacation + a disaster = an adventure.
     
-    假期 + 灾难 = 冒险。
+    *假期 + 灾难 = 冒险。*
 
 63. Buying tools: Start by buying the absolute cheapest tools you can find. Upgrade the ones you use a lot. If you wind up using some tool for a job, buy the very best you can afford.
     
@@ -268,16 +268,30 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
     
     *学会不尴尬地打盹20分钟。*
 
-• Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
+65. Following your bliss is a recipe for paralysis if you don’t know what you are passionate about. A better motto for most youth is “master something, anything”. Through mastery of one thing, you can drift towards extensions of that mastery that bring you more joy, and eventually discover where your bliss is.
+    
+    *如果你不确定自己真正热爱的事情，追求心中所向是件错误的决定。对年轻人来说，更好的格言是：“精通一件事，随便什么事”。再精通一件事情时，你可以顺便发展你更感兴趣的事情，最终你会发现自己的心中所向。*
 
-• I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today.
+66. I’m positive that in 100 years much of what I take to be true today will be proved to be wrong, maybe even embarrassingly wrong, and I try really hard to identify what it is that I am wrong about today.
+    
+    *我很确定我所相信的事情，在100年后都会被证明是错的，甚至错的离谱。我在努力鉴别我当前的错误。*
 
-• Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems.
+67. Over the long term, the future is decided by optimists. To be an optimist you don’t have to ignore all the many problems we create; you just have to imagine improving our capacity to solve problems.
+    
+    *目光放长远来看，未来属于乐观主义者。做为乐观主义者，你不必忽视我们所制造的问题，你只需想象如何提升我们解决问题的能力。*
 
-• The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia.
+68. The universe is conspiring behind your back to make you a success. This will be much easier to do if you embrace this pronoia.
+    
+    *宇宙在背后为你的成功想方设法。如果你相信“美好的事情即将发生”，你会变得更容易。（胡乱翻译了已经，感觉意思和小米的广告最接近。）*
 
 For my 69th birthday I made another batch of [additional unsolicited advice](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/).
 
+*在我69岁生日时，我写了一些[补充的忠告](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/)。*
+
 I made a video recording of me reciting these 68 bits of advice from a rocking chair, [here](https://youtu.be/Zz70rcguxwk).
 
+*我做了个视频，记录我在摇椅上读这68条建议，地址在[这](https://youtu.be/Zz70rcguxwk)。*
+
 [You can follow me [@kevin2kelly](https://twitter.com/kevin2kelly). Join my newsletter [Recomendo](https://www.getrevue.co/profile/Recomendo) for 6 recommendations per week.]
+
+*[你可以关注我的推特[@kevin2kelly](https://twitter.com/kevin2kelly)。加入我的新闻信[Recomendo](https://www.getrevue.co/profile/Recomendo)每周6条推送。]*
