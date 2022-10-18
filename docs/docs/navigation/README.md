@@ -1,7 +1,6 @@
 ---
 externalLinkIcon: false
 sidebar: false
-
 ---
 
 # 个人书签
@@ -61,3 +60,17 @@ sidebar: false
 [互联网上的免费书籍 by 阮一峰](https://github.com/ruanyf/free-books)
 
 [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
+
+## 资源
+
+### 壁纸
+
+[wallhaven.cc](https://wallhaven.cc/)
+
+[Wallpaper Abyss](https://wall.alphacoders.com/)
+
+[极简壁纸](https://bz.zzzmh.cn/)
+
+### 头像
+
+[Waifu Labs](https://waifulabs.com/)(老婆生成器)
