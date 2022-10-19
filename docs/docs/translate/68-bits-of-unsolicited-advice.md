@@ -295,3 +295,9 @@ I made a video recording of me reciting these 68 bits of advice from a rocking c
 [You can follow me [@kevin2kelly](https://twitter.com/kevin2kelly). Join my newsletter [Recomendo](https://www.getrevue.co/profile/Recomendo) for 6 recommendations per week.]
 
 *[你可以关注我的推特[@kevin2kelly](https://twitter.com/kevin2kelly)。加入我的新闻信[Recomendo](https://www.getrevue.co/profile/Recomendo)每周6条推送。]*
+
+::: tips
+
+这篇是我一年前在凯文凯利的博客复制保存起来，断断续续抽时间翻译的。现在访问博客时，该博文已经闭源，因为作者打算把这些建议编撰成书于2023年5月2日在亚马逊发售。凯文凯利是我最尊敬的人之一，可将生日时送出的礼物再收回并作为商品出售，em...
+
+:::
