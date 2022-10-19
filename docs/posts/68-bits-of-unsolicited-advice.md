@@ -1,4 +1,19 @@
-# [68 Bits of Unsolicited Advice](https://kk.org/thetechnium/68-bits-of-unsolicited-advice/)
+---
+layout: Post
+title: kk在68岁生日时给出的68条建议
+subtitle: 68 Bits of Unsolicited Advice
+headerImage: /img/in-post/kevin-kelly.jpg
+useHeaderImage: false
+date: 2022-10-19
+tags:
+- 翻译
+---
+
+断断续续地翻译完了...
+
+<!-- more -->
+
+[68 Bits of Unsolicited Advice](https://kk.org/thetechnium/68-bits-of-unsolicited-advice/)
 
 It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.(For my 69th birthday I made [another batch](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/).)
 
@@ -12,7 +27,7 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
    
    *保持热情抵得上25点IQ。*
    ::: tip
-   人们的智商是以平均数字100和标准差15为正态分布的。2005年，林恩教授公布了一项“大胆”的研究成果，称“男性比女性的智商高5点”。随后，林恩还对世界各国大学生的平均智商进行了比较，结果发现，美国大学生智商为110，居全球之首，而英国大学生紧随其后，平均智商109。
+   人们的智商是以平均数字100和标准差15为正态分布的。
    :::
 
 3. Always demand a deadline. A deadline weeds out the extraneous and the ordinary. It prevents you from trying to make it perfect, so you have to make it different. Different is better.
@@ -296,7 +311,7 @@ I made a video recording of me reciting these 68 bits of advice from a rocking c
 
 *[你可以关注我的推特[@kevin2kelly](https://twitter.com/kevin2kelly)。加入我的新闻信[Recomendo](https://www.getrevue.co/profile/Recomendo)每周6条推送。]*
 
-::: tips
+::: tip
 
 这篇是我一年前在凯文凯利的博客复制保存起来，断断续续抽时间翻译的。现在访问博客时，该博文已经闭源，因为作者打算把这些建议编撰成书于2023年5月2日在亚马逊发售。凯文凯利是我最尊敬的人之一，可将生日时送出的礼物再收回并作为商品出售，em...
 
