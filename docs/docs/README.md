@@ -48,6 +48,4 @@
 
 [Jemeter](./tests/jmeter)
 
-## 翻译
-
-[68 Bits of Unsolicited Advice](./translate/68-bits-of-unsolicited-advice)
+# 
