@@ -189,7 +189,7 @@ It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispens
 
 41. Hatred is a curse that does not affect the hated. It only poisons the hater. Release a grudge as if it was a poison.
     
-    *仇恨是一种诅咒，却对被仇恨者没什么影像。他只毒害仇恨者。把怨恨当毒物一样丢掉吧。*
+    *仇恨是一种诅咒，却对被仇恨者没什么影响。它只毒害仇恨者。把怨恨当毒物一样丢掉吧。*
 
 42. There is no limit on better. Talent is distributed unfairly, but there is no limit on how much we can improve what we start with.
     
