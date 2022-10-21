@@ -33,3 +33,13 @@ mysqldump -u用户名 -p密码 --all-databases > 文件名.sql
 - `--port, -P`：端口号。如果目标数据库使用了非3306端口，你需要它。
 
 - `--all-databases , -A`导出全部数据库。
+
+### 恢复方式
+
+执行备份的sql即可。
+
+1. 登录mysql：`mysql -uroot -p`
+
+2. 选择数据库：`use <数据库名>`
+
+3. 执行sql文件：`source <sql文件完整的路径>` 
