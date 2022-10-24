@@ -43,3 +43,29 @@ mysqldump -u用户名 -p密码 --all-databases > 文件名.sql
 2. 选择数据库：`use <数据库名>`
 
 3. 执行sql文件：`source <sql文件完整的路径>` 
+
+::: tip
+
+尽可能不要使用navicat等数据库远程连接工具执行较大的sql文件，可能会出现 `MySQL server has gone away` 这类错误。
+
+:::
+
+### 如果使用windows服务器
+
+可能再恢复数据时，时不时出现报错：
+
+```shell
+unknown command '\'
+```
+
+这是sql导出与导入时编码不一致导致的。导出时使用的是utf8编码，而导入时用的是GBK编码，备份文件恢复的时候可能就会出现格式错误。
+
+我遇到的情形是在linux导出的sql文件，恢复到windows服务器上导致的。
+
+需要记得使用utf8编码连接：
+
+```shell
+mysql -uroot -ppassword --default-character-set=utf8
+```
+
+以及，尽可能不要使用windows服务器。今年遇到了几个项目异常都是windows服务器默认使用GBK引起的:cry:。
