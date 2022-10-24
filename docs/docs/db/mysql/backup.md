@@ -36,13 +36,19 @@ mysqldump -u用户名 -p密码 --all-databases > 文件名.sql
 
 ### 恢复方式
 
-执行备份的sql即可。
+登录mysql，选择数据库并执行备份的sql文件即可：
 
 1. 登录mysql：`mysql -uroot -p`
 
 2. 选择数据库：`use <数据库名>`
 
 3. 执行sql文件：`source <sql文件完整的路径>` 
+
+或者也可以在不登陆数据库的情况执行sql文件：
+
+```shell
+mysql -uroot -pladygaga dbName < sqlFilePath
+```
 
 ::: tip
 
