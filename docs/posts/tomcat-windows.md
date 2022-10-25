@@ -107,7 +107,7 @@ The service 'gaga' has been installed.
 1. 快捷键按 `win+r` 弹出运行窗口输入 `regedit` 进入注册表编辑器。
 
 2. 打开这个路径：
-   ![regedit](tomcat-windows.assets/2022-10-25-16-49-05-image.png)
+   ![regedit](./tomcat-windows.assets/2022-10-25-16-49-05-image.png)
 
 3. 肆意修改吧，少年。（tips：修改内存大小时记得选择十进制，如果你不想考验自己的算数水平）
 
