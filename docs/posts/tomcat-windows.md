@@ -26,7 +26,7 @@ tags:
 
 ### windows环境修改tomcat控制台字符编码
 
-这个问题的原因是windows在中文环境中，cmd的默认编码集为GBK，与tomcat的字符编码不一致，所以导致tomcat的命令框和输出日志都是乱码。这是windows的锅，准确说和tomcat没什么关系，但为了不影响其它系统运行，相对于修改windows配置，最保守的解决办法是修改我们自己tomcat。
+这个问题的原因是windows在中文环境中，cmd的默认编码集为GBK，与tomcat的字符编码不一致，所以导致tomcat的命令框和输出日志都是乱码。这是windows的锅，准确说和tomcat没什么关系，但为了不影响其它系统运行，相对于修改windows配置，最保守的解决办法是修改我们自己的tomcat。
 
 修改 `tomcat\conf\logging.properties` ：
 
@@ -61,11 +61,11 @@ Both the CATALINA_HOME environment variable and the correct service name
 are required to run this program.
 ```
 
-噢，这台电脑有配置环境变量 `CATALINA_HOME` ，但却配置的不是我们的tomcat路径。我们可以配置成我们tomcat的根目录，或者直接删掉这个环境变量。(在 `service.bat` 文件中，我们可以看到，它会先在环境变量找`CATALINA_HOME` ，找不到才使用相对路径。
+噢，这台电脑有配置环境变量 `CATALINA_HOME` ，但却配置的不是我们的tomcat路径。我们可以配置成我们tomcat的根目录，或者直接删掉这个环境变量。改完环境变量记得要重开控制台。（在 `service.bat` 文件中，我们可以看到，它会先在环境变量找`CATALINA_HOME` ，找不到才使用相对路径。）
 
-或者为了不影响别人的tomca，可以将startup.bat 、shutdown.bat、catalina.bat、service.bat中的 `CATALINA_HOME` 全部改成指定路径。（救命...）
+或者为了不影响别人的tomcat，可以将startup.bat 、shutdown.bat、catalina.bat、service.bat中的 `CATALINA_HOME` 全部改成指定路径。（救命...）
 
-再来（改完环境变量记得要重开控制台）：
+再来：
 
 ```shell
 $ .\service.bat install gaga
@@ -90,9 +90,11 @@ The service 'gaga' has been installed.
 
 ### 修改jvm参数
 
-提到修改tomcat运行时的jvm参数，大家总会想到 `catalina.bat` 。但其实如果不是通过 `startup.bat` 启动，`catalina.bat` 这个文件是不经过的。tomcat：你随便改，我变算我输。
+提到修改tomcat运行时的jvm参数，大家总会想到 `catalina.bat` 。但其实如果不是通过 `startup.bat` 启动，`catalina.bat` 这个文件是不经过的。
 
-其实官方也有专门用来配置服务的工具：
+> 你随便改，反正我不改。——tomcat
+
+其实tomcat官方也有专门用来配置服务的工具，就是这个东东：
 
 ![tomcat8w](./tomcat-windows.assets/2022-10-25-16-40-36-image.png)
 
@@ -109,6 +111,6 @@ The service 'gaga' has been installed.
 2. 打开这个路径：
    ![regedit](./tomcat-windows.assets/2022-10-25-16-49-05-image.png)
 
-3. 肆意修改吧，少年。（tips：修改内存大小时记得选择十进制，如果你不想考验自己的算数水平）
+3. 肆意修改吧，少年。（tips：修改内存大小时记得选择十进制，如果你不想考验自己的算数水平。）
 
-勇敢去吧，少年！
+面对疾风吧，はさき！
