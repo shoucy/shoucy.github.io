@@ -4,7 +4,7 @@ title: windows服务器下的tomcat
 subtitle: 没有jerrry也够混乱了
 headerImage: /img/in-post/tomcat-windows.jpeg
 useHeaderImage: true
-headerMask: rgba(40, 57, 101, .2)
+headerMask: rgba(19, 75, 50, .2)
 date: 2022-10-25
 tags:
 - 运维
