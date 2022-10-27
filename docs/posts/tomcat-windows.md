@@ -1,8 +1,8 @@
 ---
 layout: Post
 title: windows服务器下的tomcat
-subtitle: oh my lady gaga
-headerImage: /img/in-post/zimablue.png
+subtitle: 没有jerrry也够混乱了
+headerImage: /img/in-post/tomcat-windows.jpeg
 useHeaderImage: true
 headerMask: rgba(40, 57, 101, .2)
 date: 2022-10-25
@@ -10,7 +10,7 @@ tags:
 - 运维
 ---
 
-当我最不喜欢的两个事物组合在了一起。
+哎，这两个事物我都不怎么喜欢...
 
 <!-- more -->
 
@@ -26,7 +26,11 @@ tags:
 
 ### windows环境修改tomcat控制台字符编码
 
-这个问题的原因是windows在中文环境中，cmd的默认编码集为GBK，与tomcat的字符编码不一致，所以导致tomcat的命令框和输出日志都是乱码。这是windows的锅，准确说和tomcat没什么关系，但为了不影响其它系统运行，相对于修改windows配置，最保守的解决办法是修改我们自己的tomcat。
+下载解压完，如果直接启动tomcat，小窗窗是会出现乱码的。
+
+这个问题的原因是windows在中文环境中，cmd的默认编码集为GBK，与tomcat的字符编码不一致，所以导致tomcat的命令框和输出日志都是乱码。这是windows的锅，准确说和tomcat没什么关系。
+
+你可以修改windows控制台的字符编码，但为了不影响其它系统运行，相对于修改windows配置，最保守的解决办法是修改我们自己的tomcat。
 
 修改 `tomcat\conf\logging.properties` ：
 
@@ -63,7 +67,7 @@ are required to run this program.
 
 噢，这台电脑有配置环境变量 `CATALINA_HOME` ，但却配置的不是我们的tomcat路径。我们可以配置成我们tomcat的根目录，或者直接删掉这个环境变量。改完环境变量记得要重开控制台。（在 `service.bat` 文件中，我们可以看到，它会先在环境变量找`CATALINA_HOME` ，找不到才使用相对路径。）
 
-或者为了不影响别人的tomcat，可以将startup.bat 、shutdown.bat、catalina.bat、service.bat中的 `CATALINA_HOME` 全部改成指定路径。（救命...）
+或者为了不影响别人的tomcat，可以将startup.bat 、shutdown.bat、catalina.bat、service.bat中的 `CATALINA_HOME` 全部改成指定路径。（这个还没实测，太麻烦了，救命...）
 
 再来：
 
