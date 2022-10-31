@@ -68,7 +68,18 @@ module.exports = {
     ],
     hitokoto: true,
     themePlugins: {
-      search: false
+      search: false,
+      giscus: {
+        repo: "shoucy/shoucy.github.io",  // 必须，string，格式：user_name/repo_name
+        repoId: "MDEwOlJlcG9zaXRvcnkzNjczOTM2NDA=",  // 必须，string，在 Giscus 官网上生成
+        category: "giscus",  // 必须，string
+        categoryId: "DIC_kwDOFeX7aM4CSQy0",  // 必须，string，在 Giscus 官网上生成
+        mapping: "pathname",  // 可选，string，default="title"
+        lazyLoad: false,  // 可选，boolean，default=false（如果设为 true，Giscus 的加载将延迟到用户滚动到评论容器附近）
+        // crossorigin: "[crossorigin]",  // 可选，string，default="anonymous"
+        // theme: "[light 模式主题]",  // 可选，string，default="light"
+        // darkTheme: "[dark 模式主题]"  // 可选，string，default="dark_dimmed"
+      }
     },
     pages: {
       // 标签页配置
