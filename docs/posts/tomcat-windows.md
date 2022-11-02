@@ -7,7 +7,7 @@ useHeaderImage: true
 headerMask: rgba(19, 75, 50, .2)
 date: 2022-10-25
 tags:
-- 运维
+- web 运维
 ---
 
 哎，这两个事物我都不怎么喜欢...
