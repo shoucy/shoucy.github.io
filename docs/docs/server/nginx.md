@@ -1,10 +1,6 @@
 # Nginx
 
-
-
 ## Nginx？yes！
-
-
 
 ### 关于集群
 
@@ -14,23 +10,21 @@
 2. 提高系统可用性，避免像单体项目一旦宕机就无法提供服务。
 3. 可伸缩。根据流量调整增加或减少节点。
 
-FBI Warning：
+::: warning
 
 在搭建集群时，我么需要关注：
 
-1. 会话需要考虑分布式会话。
-2. 定时任务要作为独立节点，我们应避免多个节点同时跑一模一样的定时任务。定时任务应单独做成一个服务。
-3. 内网要互通。
+1. 会话需要考虑分布式会话，比如统一放在redis中，或者配置固定用户转发固定ip。
+2. 我们应避免多个节点同时跑一模一样的定时任务。定时任务要不要单独做成一个服务？或者使用Quartz这类调度框架？
+3. 内网要确认是否互通。
 
-
+:::
 
 ### 关于反向代理
 
 先说说正向代理，我们用过或听过的vpn就是正向代理服务器。我们访问某个网站，可这个网站基于某些原因不为我们提供服务，这时就可以使用vpn，我们将请求发送给vpn提供商，vpn提供商就是我们的代理，帮我们来传达请求，以得到正常的服务。**在正向代理过程中，网站只能接触到vpn提供商，并不知道我们的真实身份。**
 
 而返现代理，是指用户访问网站的代理服务器，由代理服务器来决定转发到哪个服务节点。**在反向代理过程中，我们只知道代理服务器的地址，并不知道服务器的真实节点。**
-
-
 
 ### why nginx
 
@@ -47,19 +41,13 @@ nginx及其它服务器受欢迎程度的趋势：
 
 图片来源：[https://news.netcraft.com/](https://news.netcraft.com/)
 
+## 部署nginx
 
-
-## 部署它
-
-
-
-### 下载nginx源码
+### 下载源码
 
 浏览器在[nginx.org](nginx.org) ，下载下面这个版本：
 
 ![image-20220214220251855](./nginx.assets/downloadNginx.png)
-
-
 
 ### 安装依赖
 
@@ -75,17 +63,13 @@ yum install -y zlib zlib-devel
 yum install -y openssl openssl-devel
 ```
 
-
-
-### 解压nginx源码
+### 解压源码
 
 ```shell
 tar -zxvf nginx-1.20.2.tar.gz
 ```
 
-
-
-### 编译nginx
+### 编译
 
 编译之前要创建nginx临时目录，如果不创建、在启动nginx过程中会报错。
 
@@ -112,7 +96,7 @@ mkdir /var/temp/nginx -p
 ```
 
 > configure命令参数具体说明：
->
+> 
 > - --prefix=path — 定义服务器文件的完整路径，该路径同时也是configure命令设置的 相对路径（除类库源文件外）以及nginx.conf文件定义的相对路径的基准路径。其默认 值是/usr/local/nginx。
 > - --sbin-path=path — 设置nginx可执行文件的完整路径，该路径仅在安装期间使用， 默认路径为prefix/sbin/nginx。
 > - --conf-path=path — 设置配置文件nginx.conf的完整路径。如有必要，总是可以 在nginx启动时通过命令行参数-cfile指定一个不同的配置文件路径。 默认路径为prefix/conf/nginx.conf。
@@ -134,13 +118,10 @@ mkdir /var/temp/nginx -p
 > - --with-zlib=path — 设置zlib库源文件的路径地址。zlib库的发行版(version 1.1.3 — 1.2.5)需要先从zlib站点下载并解压缩。 剩下的安装工作由nginx的./configure和make命令来完成。该库应用于 ngx_http_gzip_module模块。
 > - --with-cc-opt=parameters — 设置将会添加额外参数到CFLAGS变量中。当在FreeBSD使用系统PCRE库时，需要指定 `--with-cc-opt="-I /usr/local/include"` 。 如果需要增加select()方法所支持的文件数量，也可以参照如下方式指定：`--with-cc-opt="-D FD_SETSIZE=2048"` 。
 > - --with-ld-opt=parameters — 设置将会在链接（linking）过程中使用的额外参数。当在FreeBSD使用系统PCRE库时，需要指定 --with-ld-opt="-L /usr/local/lib"。
->
 
 如果成功产生makefile配置文件，执行 `make` 命令即可编译。
 
 `make` 结束后 ，执行`make install` 命令即可安装nginx。
-
-
 
 ## 基本操作
 
@@ -150,8 +131,6 @@ mkdir /var/temp/nginx -p
 - `./nginx -s stop` 停止
 - `./nginx -t` 测试文件正确性
 - `./nginx -s reload` 重新加载
-
-
 
 ## Nginx的进程模型
 
@@ -175,9 +154,7 @@ master进程是用来管理worker进程的，worker进程用来进行工作。ma
 
 再举个例子，如果有一个worker挂掉了，master会将任务暂时交给其它worker，并重新fork一个新的worker。
 
-
-
-## 老中医
+## 或许你会遇到
 
 ### 403 request entity too large
 
@@ -190,6 +167,3 @@ http {
     ...
 }
 ```
-
-
-
