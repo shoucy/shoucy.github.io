@@ -1,7 +1,5 @@
 # Linux下安装chrome与chrome driver
 
-
-
 ## 关于环境
 
 我的环境：
@@ -10,8 +8,6 @@
 $ cat /etc/redhat-release 
 CentOS Linux release 8.3.2011
 ```
-
-
 
 ## 安装 chrome
 
@@ -51,8 +47,6 @@ yum会自动下载安装所需依赖，我这里有93个依赖。
 
 如果没有异常则安装完毕！
 
-
-
 ## 安装浏览器驱动
 
 先检查所安装的chrome版本：
@@ -66,7 +60,7 @@ Google Chrome 91.0.4472.164
 
 Chrome驱动网址：https://sites.google.com/a/chromium.org/chromedriver/
 
-如果谷歌被墙了，可以考虑科学上网，或者使用国内的镜像网站下载。
+国内可能无法访问官方站点，或者可以使用国内的镜像网站下载。
 
 比如淘宝镜像：http://npm.taobao.org/mirrors/chromedriver/
 
@@ -118,14 +112,14 @@ ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-
 如果想要在任意地方运行chrome driver，可以有两种选择，如果不需（比如手动指定驱动位置）要可以跳过：
 
 1. 建立软连接
-
+   
    ```shell
    # 软连接一定要使用绝对路径
    $ ln -s /root/download/chromedriver /usr/bin/chromedriver
    ```
 
 2. 复制一份到bin目录
-
+   
    ```shell
    cp chromedriver /usr/bin/
    ```
@@ -133,8 +127,6 @@ ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-
 个人选择第二种方式，更方便，未来不容易产生无用的软连接。
 
 *注：如果系统上有安装多个chrome，建议不要使用这两种方式，可以将chrome driver集成到项目中或放置于特定目录。*
-
-
 
 ## 安装并运行selenium
 
@@ -227,7 +219,4 @@ exit
 
 可以看到`(testChromeDriver)`消失则表示退出成功了。
 
-
-
 完毕！
-
