@@ -180,6 +180,28 @@ redis-cli [options] [commonds]
 
 不指定commond时，会进入`redis-cli`的交互控制台
 
+## windows版本
+
+并没有官方的windows版本。但是有第三方打包的redis版本：
+
+[https://github.com/tporadowski/redis/releases](https://link.zhihu.com/?target=https%3A//github.com/tporadowski/redis/releases) （更新一些）
+
+[https://github.com/MicrosoftArc](https://link.zhihu.com/?target=https%3A//github.com/MicrosoftArchive/redis/releases)
+
+启动方式：
+
+```shell
+redis-server.exe redis.windows.conf
+```
+
+写入服务：
+
+```shell
+redis-server.exe --service-install redis.windows.conf --loglevel verbose
+```
+
+
+
 ## 图形化桌面客户端
 
 GitHub上的大神编写了Redis的图形化桌面客户端，地址：[https://github.com/uglide/RedisDesktopManager](https://github.com/uglide/RedisDesktopManager)
