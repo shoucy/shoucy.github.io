@@ -4,7 +4,7 @@ const { gungnirTheme } = require("vuepress-theme-gungnir");
 
 module.exports = {
   lang: 'zh-CN',
-  title: 'Ideal',
+  title: 'ChengYu Shou',
   description: '改变带来改变',
 
 
