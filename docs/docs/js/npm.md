@@ -48,8 +48,6 @@ $ npm uninstall axois
 removed 1 package in 672ms
 ```
 
-
-
 ### 查看需要更新的组件库
 
 cd到package.json目录中，执行`npm outdated`
@@ -60,9 +58,9 @@ Package         Current         Wanted  Latest  Location               Depended 
 vuepress  2.0.0-beta.27  2.0.0-beta.39   1.9.7  node_modules/vuepress  shoucy.github.io
 ```
 
-| Package | Current  | Wanted                                                      | Latest         | Location |
-| ------- | -------- | ----------------------------------------------------------- | -------------- | -------- |
-| 包名    | 当前版本 | 满足semer版本的最高版本（及在兼容的前提下能更新的最高版本） | 当前最高的版本 |          |
+| Package | Current | Wanted                           | Latest  | Location |
+| ------- | ------- | -------------------------------- | ------- | -------- |
+| 包名      | 当前版本    | 满足semer版本的最高版本（及在兼容的前提下能更新的最高版本） | 当前最高的版本 |          |
 
 红色：可以立即更新
 黄色：需要进行兼容，慎重更新
@@ -72,8 +70,6 @@ vuepress  2.0.0-beta.27  2.0.0-beta.39   1.9.7  node_modules/vuepress  shoucy.gi
 ## 配置文件
 
 ### package.json
-
-
 
 #### 版本
 
@@ -86,8 +82,6 @@ vuepress  2.0.0-beta.27  2.0.0-beta.39   1.9.7  node_modules/vuepress  shoucy.gi
 第三位数字：bug修复版本
 
 前面的版本号增长，后面的版本就要归零
-
-
 
 #### devDependencies
 
@@ -111,15 +105,14 @@ https://registry.npmmirror.com/
 设置为淘宝镜像源为默认镜像源
 
 ```shell
-$ npm config set registry=https://registry.taobao.org/
+# $ npm config set registry=https://registry.taobao.org/ （过期了）
+npm config set registry=https://registry.npmmirror.com
 ```
-
-
 
 ### 常用镜像
 
 ```
-npm ---------- https://registry.npmjs.org/
+npm ---------- https://registry.npmjs.org/（过期了）
 yarn --------- https://registry.yarnpkg.com/
 tencent ------ https://mirrors.cloud.tencent.com/npm/
 cnpm --------- https://r.cnpmjs.org/
@@ -132,9 +125,5 @@ npmMirror ---- https://skimdb.npmjs.com/registry
 一个搜索及切换镜像的小工具
 
 ```
+
 ```
-
-
-
-
-
