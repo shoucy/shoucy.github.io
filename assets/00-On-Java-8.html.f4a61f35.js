@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-07f45866","path":"/docs/reprint/onjava8/book/00-On-Java-8.html","title":"On Java 8","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1658847489000},"readingTime":{"minutes":2,"words":382},"filePathRelative":"docs/reprint/onjava8/book/00-On-Java-8.md"}');export{a as data};

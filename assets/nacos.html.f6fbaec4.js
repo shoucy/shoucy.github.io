@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-74ad7666","path":"/docs/java/spring-cloud/nacos.html","title":"","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1670343406000},"filePathRelative":"docs/java/spring-cloud/nacos.md"}');export{a as data};

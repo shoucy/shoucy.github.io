@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1c284de0","path":"/docs/other/shoucy-blocklist.html","title":"\u4E2A\u4EBA\u7528\u5E7F\u544A\u8FC7\u6EE4\u89C4\u5219","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1658847489000},"readingTime":{"minutes":1,"words":35},"filePathRelative":"docs/other/shoucy-blocklist.md"}');export{e as data};

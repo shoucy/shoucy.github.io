@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-656b5ad2","path":"/docs/java/NIO.html","title":"NIO","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Java NIO\uFF1FYES","slug":"java-nio-yes","children":[]}],"git":{"updatedTime":1658847489000},"readingTime":{"minutes":1,"words":257},"filePathRelative":"docs/java/NIO.md"}');export{e as data};
